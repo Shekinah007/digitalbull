@@ -1,4 +1,3 @@
-import React from 'react'
 
 
 // bg-gradient-to-b from-red-950 to-black
@@ -8,7 +7,7 @@ const Benefits = () => {
             <h2 className="text-2xl self-center">Benefits and Learning Outcomes</h2>
             <div className="flex flex-col md:flex-row  items-center justify-center gap-10">
                 <div className="flex flex-col gap-10">
-                    <div className="flex flex-col gap-4 md:w-[600px] ">
+                    <div className="flex flex-col gap-4 md:w-[500px] ">
                         <span className="flex items-center justify-start gap-4">
                             <span className="h-7 w-7 rounded-full bg-red-300 text-white flex items-center justify-center">1</span>
                             <h3 className="text-xl font-semibold">Unveiling Market Trends</h3>
@@ -24,7 +23,7 @@ const Benefits = () => {
                             breakouts or reversals, and assess the overall market sentiment.
                         </p>
                     </div>
-                    <div className="flex flex-col gap-4 md:w-[600px] ">
+                    <div className="flex flex-col gap-4 md:w-[500px] ">
                         <span className="flex items-center justify-start gap-4">
                             <span className="h-7 w-7 rounded-full bg-red-300 text-white flex items-center justify-center">1</span>
                             <h3 className="text-xl font-semibold ">
@@ -48,7 +47,7 @@ const Benefits = () => {
                             more informed trading decisions.
                         </p>
                     </div>
-                    <div className="flex flex-col gap-4 md:w-[600px] ">
+                    <div className="flex flex-col gap-4 md:w-[500px] ">
                         <span className="flex items-center justify-start gap-4">
                             <span className="h-7 w-7 rounded-full bg-red-300 text-white flex items-center justify-center">3</span>
                             <h3 className="text-xl font-semibold">  Identifying Investment Opportunities</h3>
@@ -66,7 +65,7 @@ const Benefits = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-4 md:w-[600px] ">
+                <div className="flex flex-col gap-4 md:w-[500px]">
                     <span className="flex items-center justify-start gap-4">
                         <h3 className="text-xl font-semibold border-b-2 border-red-300">Conclusion</h3>
                     </span>

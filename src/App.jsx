@@ -51,8 +51,8 @@ function App() {
     <div className="bg-black min-h-screen mt-[60px] w-full text-black">
       <button onClick={()=> {
         window.scrollTo(0,0 )
-      }} className={`fixed bottom-[60px] right-[100px]`}>
-        <FaArrowAltCircleUp size="30px"/>
+      }} className={`fixed bottom-[30px] right-[30px]`}>
+        <FaArrowAltCircleUp size="50px" color="#686868da"/>
       </button>
       <Navbar handleSideBar={handleSideBar} sideBar={sideBar} />
       <Sidebar sideBar={sideBar} />
@@ -62,7 +62,7 @@ function App() {
           <p> Digital bull provides unique training on stock price data analysis and give you the tools to explore the
             stock market, gain insights and make informed trading decisions.
           </p>
-          <button className="text-white sign-btn self-start bg-red-500 font-semibold p-2 rounded-md">Sign Up For a Course</button>
+          <a href="#plans" className="text-white sign-btn self-start bg-red-500 font-semibold p-2 rounded-md">Sign Up For a Course</a>
         </div>
         <img src={graphImg} alt="graph image" className="w-[500px] " />
       </div>
