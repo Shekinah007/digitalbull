@@ -27,7 +27,7 @@ export const Plans = () => {
                                 <p>Q/A Session</p>
                             </div>
                         </div>
-                        <button className="bg-green-400 text-lg p-1 w-[200px] rounded-2xl self-center font-bold text-white">250</button>
+                        <button className="bg-green-400 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">250</button>
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@ export const Plans = () => {
                                 <p>Q/A Session</p>
                             </div>
                         </div>
-                        <button className="shadow bg-green-400 text-lg p-1 w-[200px] rounded-2xl self-center font-bold text-white">400</button>
+                        <button className="shadow bg-green-400 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">400</button>
                     </div>
                 </div>
 
