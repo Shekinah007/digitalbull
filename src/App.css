@@ -1,6 +1,11 @@
 * {
     scroll-behavior: smooth;
     transition: 0.4s;
+
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .sign-btn {
@@ -82,3 +87,32 @@
 }
 
 /* ----------------------- */
+
+
+.animate {
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.left {
+    transform: translateX(-200px);
+    transition: 1s;
+
+}
+
+.fade {
+    opacity: 0;
+    transition: 2s;
+}
+
+.card {
+    transform: translateY(100px);
+    transition: 1s;
+}
+
+
+.entrance {
+    transform: translate(0);
+    opacity: 1;
+}
