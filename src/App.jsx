@@ -31,15 +31,15 @@ function App() {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          console.log("INTERSECTING")
-          console.log(entry.target.classList.add("entrance"))
+          // console.log("INTERSECTING")
+          entry.target.classList.add("entrance")
           // setIsIntersecting(false)
         }
         else {
-          console.log("Not Intersecting")
+          // console.log("Not Intersecting")
           // setIsIntersecting(true)
 
-          console.log(entry.target.classList.remove("entrance"))
+          entry.target.classList.remove("entrance")
         }
       })
     }, { rootMargin: "20px" })
@@ -50,13 +50,41 @@ function App() {
       observer.observe(elements);
     }
 
+
+    // ////////////////////////////////////////
+    let midPoint = document.getElementsByClassName("mid-point");
+    let topButton = document.getElementById("top-button");
+    console.log("TopBUTTON", topButton.classList)
+
+    topButton.classList.add("show-top-btn");
+
+
+
+    const topObserver = new IntersectionObserver((entry) => {
+      console.log("Entry:", entry)
+      if (entry.isIntersecting) {
+        topButton.classList.toggle("show-top-btn");
+        console.log("Intersectionlsfnnwewewe")
+        console.log("TopBUTTON", topButton)
+      }
+      else {
+        console.log("NOt top button niterakjfelnji")
+        topButton.classList.remove("show-top-btn");
+      }
+    })
+
+    topObserver.observe(midPoint[0])
+
+
   }, [isIntersecting])
 
+
+
   return (
-    <div className="bg-black min-h-screen mt-[60px] w-full text-black">
+    <div className=" bg-black min-h-screen mt-[60px] w-full text-black">
       <button onClick={() => {
         window.scrollTo(0, 0)
-      }} className={`fixed bottom-[30px] right-[30px]`}>
+      }} id="top-button" className={` fixed bottom-[30px] right-[30px] to-top`}>
         <FaArrowAltCircleUp size="50px" color="#686868da" />
       </button>
       <Navbar handleSideBar={handleSideBar} sideBar={sideBar} />
@@ -65,6 +93,7 @@ function App() {
         className={`
           p-3 md:p-0  bg-gradient-to-b from-white to-gray-300 text-black min-h-[calc(100vh-60px)] 
           flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20
+          dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-white
         `}>
         <div className="md:w-[500px] flex flex-col gap-5">
           <h1 className="text-4xl font-bold self-start">TRADE WITH CONFIDENCE</h1>
@@ -76,7 +105,10 @@ function App() {
         <img src={graphImg} alt="graph image" className="w-[500px] " />
       </div>
 
-      <div className=" bg-gradient-to-t from-white to-gray-300 text-gray-600 flex flex-col gap-10 md:gap-48 md:py-20">
+      <div className="
+      bg-gradient-to-t from-white to-gray-300 text-gray-600 flex flex-col gap-10 md:gap-48 md:py-20
+      dark:bg-gradient-to-t dark:from-black dark:to-red-950 dark:text-white
+      ">
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
           <img src={excelImg1} className="h-[300px] left" />
           <p className="w-[600px] animate flex flex-col gap-5 max-w-[80vw]">
@@ -115,7 +147,7 @@ function App() {
         </div>
         <div className=" flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
           <div className="w-[600px] left flex flex-col gap-5  max-w-[80vw]" >
-            <h2 className="text-3xl font-semibold">User Interface</h2>
+            <h2 className="text-3xl font-semibold ">User Interface</h2>
             <p className="left">
               DigitalBull’s Stock Price Visualization Tool (S.P.V.T) boasts a user-friendly
               interface that effortlessly bridges complexity with simplicity. Navigating
@@ -152,6 +184,27 @@ function App() {
               confidence in navigating the complexities of stock analysis.
             </p>
           </div>
+
+        </div>
+        <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
+          <div className="w-[600px] animate flex flex-col gap-5  max-w-[80vw]">
+            <h2 className="text-3xl font-semibold">Q/A Session</h2>
+            <p className="animate">
+              DIGITAL BULL’s commitment to user empowerment extends beyond software
+              design to an exceptional user manual accompanying
+              the Stock Price Visualization Tool (S.P.V.T). Meticulously curated,
+              the manual serves as a comprehensive guide, unraveling the intricate
+              features of the tool with clarity and precision.
+              From step-by-step setup instructions to in-depth explanations of
+              advanced functionalities, users are ushered into a realm of
+              understanding. Digital Bull’s user manual is more than a guide;
+              it’s a strategic companion, fostering a seamless learning curve.
+              As investors embark on harnessing the full potential of S.P.V.T,
+              this well-crafted manual stands as a beacon, ensuring mastery and
+              confidence in navigating the complexities of stock analysis.
+            </p>
+          </div>
+          <img src={excelImg2} className="h-[300px] left" />
 
         </div>
       </div>

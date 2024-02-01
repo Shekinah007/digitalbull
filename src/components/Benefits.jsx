@@ -3,14 +3,16 @@
 // bg-gradient-to-b from-red-950 to-black
 const Benefits = ({ isIntersecting }) => {
     return (
-        <div className=" bg-white bg-gradient-to-b from-white to-gray-300 p-5 flex flex-col gap-10 min-h-screen">
-            <h2 className="text-2xl self-center">Benefits and Learning Outcomes</h2>
+        <div className="mid-point bg-white bg-gradient-to-b from-white to-gray-300 p-5 flex flex-col gap-10 min-h-screen
+        dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-white
+        ">
+            <h2 className="text-2xl font-semibold self-center">Benefits and Learning Outcomes</h2>
 
             <div className={`flex flex-col md:flex-row  items-center justify-center gap-10 animate ${isIntersecting && "entrance"}`}>
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col gap-4 md:w-[500px] ">
                         <span className="flex items-center justify-start gap-4">
-                            <span className="h-7 w-7 rounded-full bg-red-300 text-white flex items-center justify-center">1</span>
+                            <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">1</span>
                             <h3 className="text-xl font-semibold">Unveiling Market Trends</h3>
                         </span>
                         <p className="text-sm">
@@ -26,7 +28,7 @@ const Benefits = ({ isIntersecting }) => {
                     </div>
                     <div className={`flex flex-col gap-4 md:w-[500px] animate  ${isIntersecting && "entrance"}`}>
                         <span className="flex items-center justify-start gap-4">
-                            <span className="h-7 w-7 rounded-full bg-red-300 text-white flex items-center justify-center">1</span>
+                            <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">1</span>
                             <h3 className="text-xl font-semibold ">
                                 Predictive Modeling and Forecasting:
                             </h3>
@@ -50,7 +52,7 @@ const Benefits = ({ isIntersecting }) => {
                     </div>
                     <div className={`flex flex-col gap-4 md:w-[500px] animate`}>
                         <span className="flex items-center justify-start gap-4">
-                            <span className="h-7 w-7 rounded-full bg-red-300 text-white flex items-center justify-center">3</span>
+                            <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">3</span>
                             <h3 className="text-xl font-semibold">  Identifying Investment Opportunities</h3>
                         </span>
                         <p className="text-sm">
@@ -68,7 +70,7 @@ const Benefits = ({ isIntersecting }) => {
                 </div>
                 <div className={`flex flex-col gap-4 md:w-[500px] animate`}>
                     <span className="flex items-center justify-start gap-4">
-                        <h3 className="text-xl font-semibold border-b-2 border-red-300">Conclusion</h3>
+                        <h3 className="text-xl font-semibold border-b-2 border-red-500">Conclusion</h3>
                     </span>
                     <p className="text-sm">
                         Stock market data analysis is a captivating field that offers a wealth of interesting information
