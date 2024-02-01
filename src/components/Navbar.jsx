@@ -1,10 +1,11 @@
 import { Sling as Hamburger } from 'hamburger-react'
+import { DarkModeSwitch } from 'react-toggle-dark-mode'
 
 
 // import Hamburger from 'hamburger-react'
 
 
-export const Navbar = ({ handleSideBar, sideBar }) => {
+export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => {
   return (
     <nav
       className="h-[60px] z-10 fixed top-0 left-0 right-0 bg-white bg-gradient-to-t from-white to-gray-300 flex flex-row justify-between items-center px-5 text-black
@@ -23,7 +24,15 @@ export const Navbar = ({ handleSideBar, sideBar }) => {
       </div>
       <a href="mailto:digitalbull@gmail.com" className="hidden md:block rounded-md border-2 border-gray-400 p-1 px-2 contact hover:border-white">Contact Us</a>
 
-      {/* <button onClick={() => { }} >Dark Mode</button> */}
+      <div className="fixed bottom-[70px] right-[30px]">
+        <DarkModeSwitch
+          // style={{ position: 'fixed', bottom: "0" }}
+          checked={darkMode}
+          onChange={handleDarkMode}
+          size={45}
+        />
+      </div>
+
       <div className="md:hidden">
         <Hamburger toggle={handleSideBar} toggled={sideBar} />
       </div>

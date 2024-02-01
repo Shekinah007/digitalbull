@@ -11,6 +11,10 @@ import { FaArrowAltCircleUp } from "react-icons/fa";
 import graphImg from "./assets/images/graph-3078539_1920.png"
 import excelImg1 from "./assets/images/6296676_excel_microsoft_office_office365_icon.png"
 import excelImg2 from "./assets/images/excel-3873854_1280.png"
+import UIgrapghImg from "./assets/images/UI visual graph.png"
+import UIImg from "./assets/images/interface.png"
+
+
 
 import Benefits from './components/Benefits';
 import { Plans } from './components/Plans';
@@ -22,6 +26,7 @@ import { Footer } from './components/Footer';
 function App() {
 
   const [sideBar, handleSideBar] = useState(false)
+  const [darkMode, setDarkMode] = useState(true);
 
   const [isIntersecting, setIsIntersecting] = useState(false)
 
@@ -87,13 +92,15 @@ function App() {
       }} id="top-button" className={` fixed bottom-[30px] right-[30px] to-top`}>
         <FaArrowAltCircleUp size="50px" color="#686868da" />
       </button>
-      <Navbar handleSideBar={handleSideBar} sideBar={sideBar} />
+      <Navbar handleSideBar={handleSideBar} sideBar={sideBar} darkMode={darkMode} handleDarkMode={setDarkMode} />
       <Sidebar sideBar={sideBar} />
       <div id="top"
         className={`
           p-3 md:p-0  bg-gradient-to-b from-white to-gray-300 text-black min-h-[calc(100vh-60px)] 
           flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20
-          dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-white
+          ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-gray-300"}
+        hero-section
+
         `}>
         <div className="md:w-[500px] flex flex-col gap-5">
           <h1 className="text-4xl font-bold self-start">TRADE WITH CONFIDENCE</h1>
@@ -166,7 +173,7 @@ function App() {
 
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
-          <img src={graphImg} className="h-[300px] left" />
+          <img src={excelImg2} className="h-[300px] left" />
           <div className="w-[600px] animate flex flex-col gap-5  max-w-[80vw]">
             <h2 className="text-3xl font-semibold">User Manual</h2>
             <p className="animate">
@@ -186,6 +193,7 @@ function App() {
           </div>
 
         </div>
+
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
           <div className="w-[600px] animate flex flex-col gap-5  max-w-[80vw]">
             <h2 className="text-3xl font-semibold">Q/A Session</h2>
@@ -205,6 +213,30 @@ function App() {
             </p>
           </div>
           <img src={excelImg2} className="h-[300px] left" />
+
+        </div>
+        <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
+          <img src={UIgrapghImg} className="h-[200px] w-[400px] left" />
+
+          <div className="w-[600px] animate flex flex-col gap-5  max-w-[80vw]">
+            <h2 className="text-3xl font-semibold">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
+            <p className="animate">
+              Easily generate stock profile graphs from Raw stock data to visualize
+              historical stock price movements
+            </p>
+          </div>
+
+        </div>
+        <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
+
+          <div className="w-[600px] animate flex flex-col gap-5  max-w-[80vw]">
+            <h2 className="text-3xl font-semibold">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
+            <p className="animate">
+              Visualize support and resistance with prediction tables and get historical perspective on
+              breaks of support and resistance.
+            </p>
+          </div>
+          <img src={UIImg} className="h-[200px] w-[400px] left" />
 
         </div>
       </div>
