@@ -4,11 +4,11 @@
 const Benefits = ({ isIntersecting }) => {
     return (
         <div className="mid-point bg-white bg-gradient-to-b from-white to-gray-300 p-5 py-16 flex flex-col gap-10 min-h-screen
-        dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-white
+        dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-white w-screen overflow-x-hidden
         ">
             <h2 className="text-2xl md:text-3xl font-semibold self-center">Benefits and Learning Outcomes</h2>
 
-            <div className={`flex flex-col md:flex-row  items-center justify-center gap-10 animate ${isIntersecting && "entrance"}`}>
+            <div className={`flex flex-col md:flex-row items-center justify-center gap-10 animate ${isIntersecting && "entrance"}`}>
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col gap-4 md:w-[500px] ">
                         <span className="flex items-center justify-start gap-4">

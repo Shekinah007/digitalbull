@@ -96,8 +96,11 @@ function App() {
       }} id="top-button" className={` fixed bottom-[30px] right-[30px] to-top`}>
         <FaArrowAltCircleUp size="50px" color="#686868da" />
       </button>
+
       <Navbar handleSideBar={handleSideBar} sideBar={sideBar} darkMode={darkMode} handleDarkMode={setDarkMode} />
+
       <Sidebar sideBar={sideBar} />
+
       <div id="top"
         className={`
           p-3 md:p-0  bg-gradient-to-b from-white to-gray-300 text-black min-h-[calc(100vh-60px)] 
@@ -118,11 +121,11 @@ function App() {
 
       <div className="
       bg-gradient-to-t from-white to-gray-300 text-gray-600 flex flex-col gap-10 md:gap-40 md:py-20
-      dark:bg-gradient-to-t dark:from-black dark:to-red-950 dark:text-white py-20
+      dark:bg-gradient-to-t dark:from-black dark:to-red-950 dark:text-white py-20 overflow-x-hidden
       ">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-20 py-10 md:px-20 ">
           <img src={excelImg1} className="h-[100px] hidden md:block md:h-[300px] mt-10 md:mt-0 left" />
-          <p className="w-[600px] animate flex flex-col gap-5 md:text-base max-w-[90vw] md:max-w-[80vw] ">
+          <p className="w-[600px] animate flex flex-col gap-2 md:text-base max-w-[90vw] md:max-w-[80vw] ">
             <h2 className="font-bold text-3xl md:text-3xl">About</h2>
             <p className="animate">
               Digital Bull, a dedicated team of analysts, is diligently harnessing the
@@ -158,8 +161,8 @@ function App() {
           </p>
         </div>
         <div className=" flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
-          <div className="w-[600px] left flex flex-col gap-5 max-w-[90vw] min-h-[100vh] md:min-h-[80vh]" >
-            <h2 className="text-3xl font-bold ">User Interface</h2>
+          <div className="w-[600px] left flex flex-col gap-2 max-w-[90vw] py-10 md:py-5  md:min-h-[80vh]" >
+            <h2 className="text-3xl font-bold text-red-500">User Interface</h2>
             <div className="left flex flex-col gap-4">
               <p>
                 DigitalBull’s Stock Price Visualization Tool (S.P.V.T) boasts a user-friendly
@@ -184,9 +187,9 @@ function App() {
           <img src={uiImage} className="h-[170px] md:h-[300px] hidden md:block self-end animate" />
 
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
+        <div className="flex flex-col md:flex-row items-center justify-center py-10 md:py-5 md:gap-20 md:px-20 ">
           <img src={excelImg2} className="h-[150px] md:h-[300px] self-end md:self-start mr-[30px] md:mr-[0] left" />
-          <div className="w-[600px] animate flex flex-col gap-5 max-w-[90vw] min-h-[100vh] md:min-h-[80vh] md:justify-end ">
+          <div className="w-[600px] animate flex flex-col gap-2 max-w-[90vw]  md:min-h-[80vh] md:justify-end ">
             <h2 className="text-3xl font-bold  text-green-500">User Manual</h2>
             <div className="animate flex flex-col gap-4">
               <p>
@@ -211,8 +214,8 @@ function App() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
-          <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
-            <h2 className="text-3xl font-semibold">Q/A Session</h2>
+          <div className="w-[600px] animate flex flex-col gap-2 py-10 md:py-5  max-w-[90vw]">
+            <h2 className="text-3xl font-semibold text-red-500">Q/A Session</h2>
             <div className="flex flex-col gap-4">
               <p className="animate">
                 <p className="animate">
@@ -246,8 +249,8 @@ function App() {
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 pt-[70px] md:gap-20 md:px-20 ">
           <img src={UIgrapghImg} className=" w-[80vw] md:h-[200px] md:w-[400px] left" />
-          <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-green-500">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
+          <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
+            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
             <p className="animate">
               Easily generate stock profile graphs from Raw stock data to visualize
               historical stock price movements
@@ -256,8 +259,8 @@ function App() {
 
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
-          <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-green-500">USER INTERFACE: PREDICTION TABLES</h2>
+          <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
+            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: PREDICTION TABLES</h2>
             <p className="animate">
               Visualize support and resistance with prediction tables and get historical perspective on
               breaks of support and resistance.
