@@ -9,6 +9,57 @@ body {
     transition: 0.5s;
 }
 
+
+.nav-head {
+    position: relative;
+    transition: 0.5s
+}
+
+.nav-head::before {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 25%;
+    bottom: -4px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-head:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link {
+    position: relative;
+    transition: 0.5s
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 128, 128);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+
+
 .sign-btn {
     border-width: 1px;
 }
@@ -25,18 +76,19 @@ body {
 
 .card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
     border-radius: 20px;
     height: 300px;
     width: 280px;
-    cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s !important;
     border: 3px solid white;
 
 }
 
 .card:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.01);
 }
 
 .flex-center {
@@ -116,27 +168,39 @@ body {
 .animate {
     transform: translateX(60px);
     opacity: 0;
-    transition: 1s;
+    transition: 0.7s;
 }
 
 .left {
     transform: translateX(-60px);
-    transition: 1s;
+    transition: 0.7s;
+    opacity: 0;
+}
 
+.top-enter {
+    transform: scale(0.9);
+    transition: 0.5s;
+    opacity: 0;
 }
 
 .fade {
     opacity: 0;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .card {
     transform: translateY(60px);
-    transition: 1s;
+    transition: 0.8s;
 }
 
+.pattern-img {
+    /* z-index: -100; */
+    /* transform: translateX(350px) translateY(-300px) rotate(80deg); */
+    /* background-color: red; */
+    /* margin-left: 700px; */
+}
 
 .entrance {
-    transform: translate(0) scale(1);
+    transform: translate(0) scale(1) rotate(0);
     opacity: 1;
 }

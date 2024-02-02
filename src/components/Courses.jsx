@@ -1,7 +1,7 @@
 import "./table.css"
 export const Courses = () => {
     return (
-        <div className={`min-h-screen flex flex-col items-center justify-center text-gray-200 gap-2 py-16 bg-gray-600 `}>
+        <div id="course-outline" className={`min-h-screen flex flex-col items-center justify-center text-gray-200 gap-2 py-16 bg-gray-600 `}>
             <h2 className="text-2xl md:text-3xl font-bold md:self-start md:ml-20 ">Course Outline</h2>
             <hr className="w-[90vw] mb-5" />
 

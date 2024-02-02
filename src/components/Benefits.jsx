@@ -1,11 +1,12 @@
 
 
 // bg-gradient-to-b from-red-950 to-black
-const Benefits = ({ isIntersecting }) => {
+const Benefits = ({ isIntersecting, darkMode }) => {
     return (
-        <div className="mid-point bg-white bg-gradient-to-b from-white to-gray-300 p-5 py-16 flex flex-col gap-10 min-h-screen
-        dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-white w-screen overflow-x-hidden
-        ">
+        <div id="learning-goals" className={`mid-point bg-white bg-gradient-to-b from-white to-gray-300 p-5 py-16 flex flex-col gap-10 min-h-screen
+        dark:bg-gradient-to-b  w-screen overflow-x-hidden
+      ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-gray-300"} 
+        `}>
             <h2 className="text-2xl md:text-3xl font-semibold self-center">Benefits and Learning Outcomes</h2>
 
             <div className={`flex flex-col md:flex-row items-center justify-center gap-10 animate ${isIntersecting && "entrance"}`}>

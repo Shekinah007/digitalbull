@@ -1,10 +1,9 @@
-import React from 'react'
 
-export default function Sidebar({ sideBar }) {
+export default function Sidebar({ sideBar, darkMode }) {
     return (
         <div
             className={`
-             z-10 w-[230px] overflow-hidden md:hidden bg-black  min-h-[calc(100vh-60px)]
+             z-50 w-[230px] overflow-hidden md:hidden bg-black  min-h-[calc(100vh-60px)]
              fixed top-min-h-[calc(100vh-60px)] flex flex-col items-start gap-6 p-5
              bg-gradient-to-t from-gray-300 to-white
              ${!sideBar && "-translate-x-[300px]"}

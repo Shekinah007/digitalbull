@@ -8,18 +8,18 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode'
 export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => {
   return (
     <nav
-      className="h-[60px] z-10 fixed top-0 left-0 right-0 bg-white bg-gradient-to-t from-white to-gray-300 flex flex-row justify-between items-center px-5 text-black
+      className="h-[60px] z-20 fixed top-0 left-0 right-0 bg-white bg-gradient-to-t from-white to-gray-300 flex flex-row justify-between items-center px-5 text-black
       dark:bg-gradient-to-t dark:from-black dark:to-black dark:text-white
     ">
       <div className="flex gap-5 items-center">
         <div>
-          <a href="#top" className="border-b-2 border-red-400 font-bold text-xl md:text-xl">DIGITAL <span className="red">BULL</span></a>
-          <div className="underline"></div>
+          <a href="#top" className="nav-head font-bold text-xl md:text-xl text-red-400">DIGITAL BULL</a>
+          {/* <div className="underline"></div> */}
         </div>
         <div className="gap-5 hidden md:flex">
-          <a href="#learning-goals">What you will learn</a>
-          <a href="#">Training Results</a>
-          <a href="#course-outline">Course Outline</a>
+          <a href="#about" className="nav-link font-semibold text-gray-300">About</a>
+          <a href="#learning-goals" className="nav-link font-semibold text-gray-300">What you will learn</a>
+          <a href="#course-outline" className="nav-link font-semibold text-gray-300">Course Outline</a>
         </div>
       </div>
       <a href="mailto:digitalbull@gmail.com" className="hidden md:block rounded-md border-2 border-gray-400 p-1 px-2 contact hover:border-white">Contact Us</a>

@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 
+@layer components {
+    /* .dark-bg-top {
+        @apply bg-gradient-to-t dark:from-black dark:to-red-950 dark:text-white
+    } */
+}
+
+
 *,
 body {
     margin: 0;
     padding: 0;
-}
-
-body {
-    /* width: 100vw; */
+    transition: 0.5s;
 }

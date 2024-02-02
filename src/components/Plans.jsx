@@ -1,7 +1,7 @@
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 export const Plans = ({ isIntersecting }) => {
     return (
-        <div id="plans" className="min-h-screen md:min-h-[500px] flex flex-col items-center justify-center gap-5 bg-white py-10 text-gray-500">
+        <div id="plans" className="min-h-screen md:min-h-[300px] flex flex-col items-center justify-center gap-5 bg-white py-10 text-gray-500">
             <h2 className="text-3xl font-bold"><span className="text-red-500">Flexible</span> Plans</h2>
             <p className="text-lg font-semibold">Choose a plan that works best for you</p>
             <div className="flex flex-wrap items-center justify-center gap-10">
@@ -28,7 +28,7 @@ export const Plans = ({ isIntersecting }) => {
                                 <p>Q/A Session</p>
                             </div>
                         </div>
-                        <button className="bg-green-500 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">250</button>
+                        <button className="cursor-pointer bg-green-500 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">250</button>
                     </div>
                 </div>
 

@@ -17,6 +17,11 @@ import excelImg2 from "./assets/images/excel-3873854_1280.png"
 import UIgrapghImg from "./assets/images/UI visual graph.png"
 import UIImg from "./assets/images/interface.png"
 
+import heroBgImg from "./assets/images/grid vert.png"
+import gridDia from "./assets/images/grid-dia.png"
+import honeyImg from "./assets/images/honey-comb.png"
+import honeyImg2 from "./assets/images/honey-comb (2).png"
+
 
 
 import Benefits from './components/Benefits';
@@ -35,7 +40,18 @@ function App() {
   const [isIntersecting, setIsIntersecting] = useState(false)
 
   useEffect(() => {
-    let classes = document.querySelectorAll(".animate, .left, .fade, .card")
+
+
+    // window.onscroll = function () { myFunction() };
+
+    // function myFunction() {
+    //   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    //   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    //   var scrolled = (winScroll / height) * 100;
+    //   document.getElementById("myBar").style.width = scrolled + "%";
+    // }
+
+    let classes = document.querySelectorAll(".animate, .left, .fade, .card, .top-enter")
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -97,37 +113,48 @@ function App() {
         <FaArrowAltCircleUp size="50px" color="#686868da" />
       </button>
 
+
+
+      {/* <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+        <div className="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style={{ width: "45%" }} ></div>
+      </div> */}
+
+
+
       <Navbar handleSideBar={handleSideBar} sideBar={sideBar} darkMode={darkMode} handleDarkMode={setDarkMode} />
 
-      <Sidebar sideBar={sideBar} />
+      <Sidebar sideBar={sideBar} darkMode={darkMode} />
 
       <div id="top"
-        className={`
+        className={`relative
           p-3 md:p-0  bg-gradient-to-b from-white to-gray-300 text-black min-h-[calc(100vh-60px)] 
           flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20
           ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-gray-300"}
-        hero-section
-
+        hero-section overflow-x-hidden
         `}>
-        <div className="md:w-[500px] flex flex-col gap-5">
-          <h1 className="text-4xl font-bold self-start">TRADE WITH CONFIDENCE</h1>
-          <p> Digital bull provides unique training on stock price data analysis and give you the tools to explore the
+        <img src={heroBgImg} alt="" className="absolute w-[300px] md:w-[600px]  invert -z-1 rotate-45 md:rotate-45 -right-[20px] -top-[200px] pattern-img " />
+        {/* <img src={gridDia} alt="" className="absolute w-[600px]  invert -z-1 rotate-12 -right-[20px] -top-[100px] pattern-img " /> */}
+        <div className="md:w-[500px] flex flex-col gap-5 z-10">
+          <h1 className="text-4xl font-bold self-start animate">TRADE WITH CONFIDENCE</h1>
+          <p className="left"> Digital bull provides unique training on stock price data analysis and give you the tools to explore the
             stock market, gain insights and make informed trading decisions.
           </p>
-          <a href="#plans" className="text-white sign-btn self-start bg-red-500 font-semibold p-2 rounded-md">Sign Up For a Course</a>
+          <a href="#plans" className="text-white sign-btn self-start bg-red-500 font-semibold p-2 rounded-md animate">Sign Up For a Course</a>
         </div>
-        <img src={climbImg} alt="graph image" className="w-[500px] " />
+        <img src={climbImg} alt="graph image" className="w-[500px] z-10 top-enter " />
       </div>
 
-      <div className="
+      <div id="about" className={`
       bg-gradient-to-t from-white to-gray-300 text-gray-600 flex flex-col gap-10 md:gap-40 md:py-20
-      dark:bg-gradient-to-t dark:from-black dark:to-red-950 dark:text-white py-20 overflow-x-hidden
-      ">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-20 py-10 md:px-20 ">
-          <img src={excelImg1} className="h-[100px] hidden md:block md:h-[300px] mt-10 md:mt-0 left" />
-          <p className="w-[600px] animate flex flex-col gap-2 md:text-base max-w-[90vw] md:max-w-[80vw] ">
-            <h2 className="font-bold text-3xl md:text-3xl">About</h2>
-            <p className="animate">
+      dark:bg-gradient-to-t py-20 overflow-x-hidden
+      ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-gray-300"}
+    `}>
+        <div className="flex flex-col-reverse overflow-x-hidden md:flex-row items-center justify-center md:gap-20 py-10 md:px-20 ">
+          <img src={honeyImg2} alt="" className="absolute hidden md:block w-[600px]   rotate-45 -left-[300px] top-[1000px] pattern-img " />
+          <img src={excelImg1} className="z-10 h-[100px] hidden md:block md:h-[300px] mt-10 md:mt-0 left" />
+          <div className="relative w-[600px] flex flex-col gap-2 md:text-base max-w-[90vw] md:max-w-[80vw] ">
+            <h2 className="z-10 font-bold text-3xl md:text-3xl">About</h2>
+            <p className="animate z-10">
               Digital Bull, a dedicated team of analysts, is diligently harnessing the
               power of Microsoft Excel to craft a groundbreaking software tool named
               Stock Price Visualization Tool (S.P.V.T). This innovative tool is poised
@@ -135,8 +162,8 @@ function App() {
               visualizations of stock price trends, empowering investors to make informed
               decisions.
             </p>
-            <img src={excelImg1} className="h-[100px] w-[100px] self-center md:hidden left" />
-            <p className="animate">
+            <img src={excelImg1} className=" h-[100px] w-[100px] self-center md:hidden left z-30" />
+            <p className="animate z-10 ">
               The team’s commitment to excellence is evident in their meticulous use of
               Microsoft Excel, a versatile spreadsheet software, to develop the intricate
               algorithms and formulas that underpin the S.P.V.T. Excel’s robust
@@ -144,7 +171,8 @@ function App() {
               of historical stock data swiftly, extracting meaningful patterns and
               trends.
             </p>
-            <p className="animate">
+
+            <p className="animate z-10">
               The S.P.V.T aims to offer traders a comprehensive visual
               representation of stock price movements, aiding them in identifying potential
               market trends and making strategic decisions. Through the seamless
@@ -158,7 +186,7 @@ function App() {
               dedication and innovation can converge to shape the future of stock trading
               tools.
             </p>
-          </p>
+          </div>
         </div>
         <div className=" flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
           <div className="w-[600px] left flex flex-col gap-2 max-w-[90vw] py-10 md:py-5  md:min-h-[80vh]" >
@@ -271,7 +299,7 @@ function App() {
         </div>
       </div>
 
-      <Benefits isIntersecting={isIntersecting} />
+      <Benefits isIntersecting={isIntersecting} darkMode={darkMode} />
       <Courses />
       <Plans isIntersecting={isIntersecting} />
       <Footer />
