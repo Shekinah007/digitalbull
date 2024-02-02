@@ -7,17 +7,16 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode'
 
 export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => {
 
-  const closeSideBar = () => {
-    handleSideBar(false);
-  }
-
   return (
     <nav
-      className="h-[60px] z-50 fixed top-0 left-0 right-0 bg-white bg-gradient-to-t from-white to-gray-300 flex flex-row justify-between items-center px-5 text-black
-      dark:bg-gradient-to-t dark:from-black dark:to-black dark:text-white
-    ">
+      className={`
+      h-[60px] z-50 fixed top-0 left-0 right-0 flex flex-row justify-between items-center px-5 
+      bg-white  text-black
+      ${darkMode && "dark:bg-black dark:text-gray-300"}
 
-      <div className="absolute top-[58px] left-0 w-full bg-black rounded-full h-1 mb-4 dark:bg-black">
+    `}>
+
+      <div className="absolute top-[58px] left-0 w-full bg-black rounded-full h-1 mb-4 dark:bg-black/0">
         <div id="myBar" className="bg-blue-500 h-1 rounded-full dark:bg-red-500 myBar" style={{ width: "45%" }} ></div>
       </div>
 
@@ -27,10 +26,10 @@ export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => 
           {/* <div className="underline"></div> */}
         </div>
         <div className="gap-5 hidden md:flex text-lg">
-          <a href="#about" className="nav-link font-semibold text-gray-300">About</a>
-          <a href="#learning-goals" className="nav-link font-semibold text-gray-300">What you will learn</a>
-          <a href="#course-outline" className="nav-link font-semibold text-gray-300">Course Outline</a>
-          <a href="#plans" className="nav-link font-semibold text-gray-300">Plans</a>
+          <a href="#about" className="nav-link font-semibold ">About</a>
+          <a href="#learning-goals" className="nav-link font-semibold">What you will learn</a>
+          <a href="#course-outline" className="nav-link font-semibold ">Course Outline</a>
+          <a href="#plans" className="nav-link font-semibold ">Plans</a>
         </div>
       </div>
       <a href="mailto:digitalbull@gmail.com"

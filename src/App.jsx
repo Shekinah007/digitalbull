@@ -57,14 +57,9 @@ function App() {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // console.log("INTERSECTING")
           entry.target.classList.add("entrance")
-          // setIsIntersecting(false)
         }
         else {
-          // console.log("Not Intersecting")
-          // setIsIntersecting(true)
-
           entry.target.classList.remove("entrance")
         }
       })
@@ -78,28 +73,29 @@ function App() {
 
 
     // ////////////////////////////////////////
-    let midPoint = document.getElementsByClassName("mid-point");
-    let topButton = document.getElementById("top-button");
-    console.log("TopBUTTON", topButton.classList)
+    let midPoint = document.getElementById("mid-point");
+    let topButton = document.getElementsByClassName("to-top")[0];
 
     topButton.classList.add("show-top-btn");
 
-
-
     const topObserver = new IntersectionObserver((entry) => {
+      // console.log("Entry:", entry)
       console.log("Entry:", entry)
-      if (entry.isIntersecting) {
+      console.log("IS entry intersecting? ", entry[0].isIntersecting)
+      if (entry[0].isIntersecting) {
         topButton.classList.add("show-top-btn");
-        console.log("Intersectionlsfnnwewewe")
-        console.log("TopBUTTON", topButton)
+        // console.log("Intersectionlsfnnwewewe")
+        // console.log("TopBUTTON", topButton)
+
+        console.log("Mid Point intersecting")
       }
       else {
-        console.log("NOt top button niterakjfelnji")
+        console.log("midppoint NOT intersecting")
         topButton.classList.remove("show-top-btn");
       }
     })
 
-    topObserver.observe(midPoint[0])
+    topObserver.observe(midPoint)
 
 
   }, [isIntersecting])
@@ -110,7 +106,7 @@ function App() {
     <div className=" bg-black min-h-screen mt-[60px] w-full text-black">
       <button onClick={() => {
         window.scrollTo(0, 0)
-      }} id="top-button" className={` fixed bottom-[30px] right-[30px] to-top`}>
+      }} id="top-button" className={`to-top`}>
         <FaArrowAltCircleUp size="50px" color="#686868da" />
       </button>
 
@@ -136,6 +132,7 @@ function App() {
         </div>
         <img src={climbImg} alt="graph image" className="w-[500px] z-10 top-enter " />
       </div>
+
 
       <div id="about" className={`
       bg-gradient-to-t from-white to-gray-300 text-gray-600 flex flex-col gap-10 md:gap-40 md:py-20
@@ -292,12 +289,16 @@ function App() {
         </div>
       </div>
 
-      <Benefits isIntersecting={isIntersecting} darkMode={darkMode} />
-      <Courses />
-      <Plans isIntersecting={isIntersecting} />
-      <Footer />
+      <div id="mid-point" className="flex flex-col">
 
-    </div>
+        <Benefits isIntersecting={isIntersecting} darkMode={darkMode} />
+        <Courses />
+        <Plans isIntersecting={isIntersecting} />
+        <Footer />
+
+      </div>
+
+    </div >
   )
 }
 
