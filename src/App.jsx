@@ -147,7 +147,7 @@ function App() {
       ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-gray-300"}
     `}>
         <div className="flex flex-col-reverse overflow-x-hidden md:flex-row items-center justify-center md:gap-20 py-10 md:px-20 ">
-          <img src={honeyImg2} alt="" className="absolute md:opacity-100 invert md:block w-[600px]   rotate-45 -left-[300px] top-[1000px] pattern-img " />
+          <img src={honeyImg2} alt="" className="absolute md:opacity-30 invert md:block w-[600px] rotate-45 -left-[300px] top-[1000px] pattern-img " />
           <img src={excelImg1} className="z-10 h-[100px] hidden md:block md:h-[300px] mt-10 md:mt-0 left" />
           <div className="relative w-[600px] flex flex-col gap-2 md:text-base max-w-[90vw] md:max-w-[80vw] ">
             <h2 className="z-10 font-bold text-3xl md:text-3xl">About</h2>
