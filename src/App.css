@@ -58,6 +58,52 @@ body {
     left: 0;
 }
 
+.contact-btn {
+    position: relative;
+
+}
+
+.contact-btn::after {
+    transition: 0.4s;
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: rgb(255, 60, 60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    z-index: -10;
+}
+
+.contact-btn:hover::after {
+    width: 100%;
+}
+
+
+.send-email {
+    position: relative;
+    background-color: rgb(102, 102, 102);
+    z-index: 10;
+}
+
+.send-email::after {
+    transition: 0.4s;
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: rgb(255, 64, 64);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    z-index: -10;
+}
+
+.send-email:hover::after {
+    width: 100%;
+}
+
 
 
 .sign-btn {

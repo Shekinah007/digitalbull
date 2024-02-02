@@ -8,7 +8,7 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode'
 export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => {
   return (
     <nav
-      className="h-[60px] z-20 fixed top-0 left-0 right-0 bg-white bg-gradient-to-t from-white to-gray-300 flex flex-row justify-between items-center px-5 text-black
+      className="h-[60px] z-50 fixed top-0 left-0 right-0 bg-white bg-gradient-to-t from-white to-gray-300 flex flex-row justify-between items-center px-5 text-black
       dark:bg-gradient-to-t dark:from-black dark:to-black dark:text-white
     ">
       <div className="flex gap-5 items-center">
@@ -22,7 +22,11 @@ export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => 
           <a href="#course-outline" className="nav-link font-semibold text-gray-300">Course Outline</a>
         </div>
       </div>
-      <a href="mailto:digitalbull@gmail.com" className="hidden md:block rounded-md border-2 border-gray-400 p-1 px-2 contact hover:border-white">Contact Us</a>
+      <a href="mailto:digitalbull@gmail.com"
+        className="hidden md:block rounded-md border-2 border-gray-400 
+        p-1 px-2 contact hover:border-white contact-btn">
+        Contact Us
+      </a>
 
       <div className="fixed bottom-[70px] right-[30px]">
         <DarkModeSwitch

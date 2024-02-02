@@ -20,9 +20,10 @@ export const Footer = () => {
                         question on tool use and functionality
                     </p>
                 </div>
-                <div className='hidden md:flex self-end md:self-start mt-[5px] gap-3 items-center'>
+                <div className='hidden md:flex self-end md:self-start mt-[5px] gap-3 items-center '>
                     <span>👉</span>
-                    <a href="mailto:digitabull@gmail.com" className="p-2 rounded-md bg-red-500 text-white">Send us an email</a>
+                    <a href="mailto:digitabull@gmail.com"
+                        className="p-2 rounded-md text-white send-email">Send us an email</a>
                 </div>
 
             </div>
