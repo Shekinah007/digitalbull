@@ -3,10 +3,10 @@
 // bg-gradient-to-b from-red-950 to-black
 const Benefits = ({ isIntersecting }) => {
     return (
-        <div className="mid-point bg-white bg-gradient-to-b from-white to-gray-300 p-5 flex flex-col gap-10 min-h-screen
+        <div className="mid-point bg-white bg-gradient-to-b from-white to-gray-300 p-5 py-16 flex flex-col gap-10 min-h-screen
         dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-white
         ">
-            <h2 className="text-2xl font-semibold self-center">Benefits and Learning Outcomes</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold self-center">Benefits and Learning Outcomes</h2>
 
             <div className={`flex flex-col md:flex-row  items-center justify-center gap-10 animate ${isIntersecting && "entrance"}`}>
                 <div className="flex flex-col gap-10">

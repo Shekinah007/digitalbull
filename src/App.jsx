@@ -9,6 +9,9 @@ import { FaArrowAltCircleUp } from "react-icons/fa";
 
 
 import graphImg from "./assets/images/graph-3078539_1920.png"
+import uiImage from "./assets/images/illustrations/undraw_data_trends_re_2cdy.svg"
+import questionsImg from "./assets/images/illustrations/undraw_questions_re_1fy7.svg"
+import climbImg from "./assets/images/climb2.png"
 import excelImg1 from "./assets/images/6296676_excel_microsoft_office_office365_icon.png"
 import excelImg2 from "./assets/images/excel-3873854_1280.png"
 import UIgrapghImg from "./assets/images/UI visual graph.png"
@@ -19,6 +22,7 @@ import UIImg from "./assets/images/interface.png"
 import Benefits from './components/Benefits';
 import { Plans } from './components/Plans';
 import { Footer } from './components/Footer';
+import { Courses } from './components/Courses';
 
 
 // bg-gradient-to-b from-black to-red-950 text-white
@@ -47,7 +51,7 @@ function App() {
           entry.target.classList.remove("entrance")
         }
       })
-    }, { rootMargin: "20px" })
+    }, { rootMargin: "20px", })
 
     for (let i = 0; i < classes.length; i++) {
       const elements = classes[i];
@@ -109,16 +113,17 @@ function App() {
           </p>
           <a href="#plans" className="text-white sign-btn self-start bg-red-500 font-semibold p-2 rounded-md">Sign Up For a Course</a>
         </div>
-        <img src={graphImg} alt="graph image" className="w-[500px] " />
+        <img src={climbImg} alt="graph image" className="w-[500px] " />
       </div>
 
       <div className="
       bg-gradient-to-t from-white to-gray-300 text-gray-600 flex flex-col gap-10 md:gap-48 md:py-20
-      dark:bg-gradient-to-t dark:from-black dark:to-red-950 dark:text-white
+      dark:bg-gradient-to-t dark:from-black dark:to-red-950 dark:text-white py-20
       ">
-        <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
-          <img src={excelImg1} className="h-[300px] left" />
-          <p className="w-[600px] animate flex flex-col gap-5 max-w-[80vw]">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-20 py-10 md:px-20 ">
+          <img src={excelImg1} className="h-[100px] hidden md:block md:h-[300px] mt-10 md:mt-0 left" />
+          <p className="w-[600px] animate flex flex-col gap-5 text-sm md:text-base max-w-[90vw] md:max-w-[80vw] ">
+            <h2 className="font-bold text-2xl md:text-3xl">About</h2>
             <p className="animate">
               Digital Bull, a dedicated team of analysts, is diligently harnessing the
               power of Microsoft Excel to craft a groundbreaking software tool named
@@ -127,6 +132,7 @@ function App() {
               visualizations of stock price trends, empowering investors to make informed
               decisions.
             </p>
+            <img src={excelImg1} className="h-[100px] w-[100px] self-center md:hidden left" />
             <p className="animate">
               The team’s commitment to excellence is evident in their meticulous use of
               Microsoft Excel, a versatile spreadsheet software, to develop the intricate
@@ -150,76 +156,98 @@ function App() {
               tools.
             </p>
           </p>
-
         </div>
-        <div className=" flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
-          <div className="w-[600px] left flex flex-col gap-5  max-w-[80vw]" >
-            <h2 className="text-3xl font-semibold ">User Interface</h2>
-            <p className="left">
-              DigitalBull’s Stock Price Visualization Tool (S.P.V.T) boasts a user-friendly
-              interface that effortlessly bridges complexity with simplicity. Navigating
-              through intricate stock data becomes a seamless experience, thanks to the
-              intuitive design crafted on the robust foundation of Microsoft Excel.
-              The tool offers a harmonious blend of functionality and accessibility,
-              ensuring both novice and seasoned investors can effortlessly harness its
-              power. With sleek visuals, interactive charts, and streamlined controls,
-              users can grasp intricate stock price trends at a glance.
-              DigitalBull’s commitment to a friendly user interface propels the S.P.V.T
-              to the forefront, empowering investors with a powerful yet approachable
-              tool for making well-informed decisions in the dynamic world of stock trading.
-            </p>
+        <div className=" flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
+          <div className="w-[600px] left flex flex-col gap-5 max-w-[90vw] min-h-screen md:min-h-[700px]" >
+            <h2 className="text-3xl font-bold ">User Interface</h2>
+            <div className="left flex flex-col gap-4">
+              <p>
+                DigitalBull’s Stock Price Visualization Tool (S.P.V.T) boasts a user-friendly
+                interface that effortlessly bridges complexity with simplicity. Navigating
+                through intricate stock data becomes a seamless experience, thanks to the
+                intuitive design crafted on the robust foundation of Microsoft Excel.
+                The tool offers a harmonious blend of functionality and accessibility,
+                ensuring both novice and seasoned investors can effortlessly harness its
+                power.
+              </p>
+              <img src={uiImage} className="h-[170px] md:hidden md:h-[300px] animate" />
+
+              <p>
+                With sleek visuals, interactive charts, and streamlined controls,
+                users can grasp intricate stock price trends at a glance.
+                DigitalBull’s commitment to a friendly user interface propels the S.P.V.T
+                to the forefront, empowering investors with a powerful yet approachable
+                tool for making well-informed decisions in the dynamic world of stock trading.
+              </p>
+            </div>
           </div>
-          <img src={graphImg} className="h-[300px] animate" />
+          <img src={uiImage} className="h-[170px] md:h-[300px] hidden md:block animate" />
 
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
           <img src={excelImg2} className="h-[300px] left" />
-          <div className="w-[600px] animate flex flex-col gap-5  max-w-[80vw]">
-            <h2 className="text-3xl font-semibold">User Manual</h2>
-            <p className="animate">
-              DIGITAL BULL’s commitment to user empowerment extends beyond software
-              design to an exceptional user manual accompanying
-              the Stock Price Visualization Tool (S.P.V.T). Meticulously curated,
-              the manual serves as a comprehensive guide, unraveling the intricate
-              features of the tool with clarity and precision.
-              From step-by-step setup instructions to in-depth explanations of
-              advanced functionalities, users are ushered into a realm of
-              understanding. Digital Bull’s user manual is more than a guide;
-              it’s a strategic companion, fostering a seamless learning curve.
-              As investors embark on harnessing the full potential of S.P.V.T,
-              this well-crafted manual stands as a beacon, ensuring mastery and
-              confidence in navigating the complexities of stock analysis.
-            </p>
+          <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
+            <h2 className="text-3xl font-bold  text-green-500">User Manual</h2>
+            <div className="animate flex flex-col gap-4">
+              <p>
+                DIGITAL BULL’s commitment to user empowerment extends beyond software
+                design to an exceptional user manual accompanying
+                the Stock Price Visualization Tool (S.P.V.T). Meticulously curated,
+                the manual serves as a comprehensive guide, unraveling the intricate
+                features of the tool with clarity and precision.
+              </p>
+              <p>
+                From step-by-step setup instructions to in-depth explanations of
+                advanced functionalities, users are ushered into a realm of
+                understanding. Digital Bull’s user manual is more than a guide;
+                it’s a strategic companion, fostering a seamless learning curve.
+                As investors embark on harnessing the full potential of S.P.V.T,
+                this well-crafted manual stands as a beacon, ensuring mastery and
+                confidence in navigating the complexities of stock analysis.
+              </p>
+            </div>
           </div>
 
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
-          <div className="w-[600px] animate flex flex-col gap-5  max-w-[80vw]">
+          <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
             <h2 className="text-3xl font-semibold">Q/A Session</h2>
-            <p className="animate">
-              DIGITAL BULL’s commitment to user empowerment extends beyond software
-              design to an exceptional user manual accompanying
-              the Stock Price Visualization Tool (S.P.V.T). Meticulously curated,
-              the manual serves as a comprehensive guide, unraveling the intricate
-              features of the tool with clarity and precision.
-              From step-by-step setup instructions to in-depth explanations of
-              advanced functionalities, users are ushered into a realm of
-              understanding. Digital Bull’s user manual is more than a guide;
-              it’s a strategic companion, fostering a seamless learning curve.
-              As investors embark on harnessing the full potential of S.P.V.T,
-              this well-crafted manual stands as a beacon, ensuring mastery and
-              confidence in navigating the complexities of stock analysis.
-            </p>
+            <div className="flex flex-col gap-4">
+              <p className="animate">
+                <p className="animate">
+                  Digital Bull's commitment to user proficiency extends to a dynamic
+                </p>
+
+                <p className="animate">online Q/A session delivered via Zoom, where investors can seamlessly</p>
+                <p className="animate">
+                  connect with experts. This interactive session serves as a personalized
+                </p>
+                <p className="animate">
+                  guide, addressing user queries and unlocking the nuances of the
+                </p>
+
+                <p className="animate">Stock Price Visualization Tool (S.P.V.T).</p>
+              </p>
+              <img src={questionsImg} className="h-[150px] animate md:hidden left" />
+              <p className="animate">
+                Led by knowledgeable instructors, participants gain firsthand insights into
+                navigating the tool's features, interpreting visualizations, and optimizing
+                its potential for informed decision-making. The Zoom instructor-led class
+                transforms the learning experience into a collaborative journey, ensuring users
+                grasp the intricacies of the tool while fostering a supportive community
+                of investors ready to harness the power of S.P.V.T.
+              </p>
+
+            </div>
           </div>
-          <img src={excelImg2} className="h-[300px] left" />
+          <img src={questionsImg} className="h-[300px] hidden md:block left" />
 
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
-          <img src={UIgrapghImg} className="h-[200px] w-[400px] left" />
-
-          <div className="w-[600px] animate flex flex-col gap-5  max-w-[80vw]">
-            <h2 className="text-3xl font-semibold">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 pt-[70px] md:gap-20 md:px-20 ">
+          <img src={UIgrapghImg} className=" w-[80vw] md:h-[200px] md:w-[400px] left" />
+          <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
+            <h2 className="text-3xl font-bold text-green-500">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
             <p className="animate">
               Easily generate stock profile graphs from Raw stock data to visualize
               historical stock price movements
@@ -227,16 +255,16 @@ function App() {
           </div>
 
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
 
-          <div className="w-[600px] animate flex flex-col gap-5  max-w-[80vw]">
-            <h2 className="text-3xl font-semibold">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
+          <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
+            <h2 className="text-3xl font-bold text-green-500">USER INTERFACE: PREDICTION TABLES</h2>
             <p className="animate">
               Visualize support and resistance with prediction tables and get historical perspective on
               breaks of support and resistance.
             </p>
           </div>
-          <img src={UIImg} className="h-[200px] w-[400px] left" />
+          <img src={UIImg} className="w-[80vw] md:h-[200px] md:w-[400px] left" />
 
         </div>
       </div>
@@ -249,6 +277,7 @@ function App() {
         </div>
       </div> */}
 
+      <Courses />
       <Footer />
 
     </div>

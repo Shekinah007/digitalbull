@@ -114,13 +114,13 @@ body {
 }
 
 .animate {
-    transform: translateX(200px);
+    transform: translateX(60px);
     opacity: 0;
     transition: 1s;
 }
 
 .left {
-    transform: translateX(-200px);
+    transform: translateX(-60px);
     transition: 1s;
 
 }
@@ -131,7 +131,7 @@ body {
 }
 
 .card {
-    transform: translateY(100px);
+    transform: translateY(60px);
     transition: 1s;
 }
 
