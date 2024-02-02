@@ -117,7 +117,7 @@ function App() {
       </div>
 
       <div className="
-      bg-gradient-to-t from-white to-gray-300 text-gray-600 flex flex-col gap-10 md:gap-48 md:py-20
+      bg-gradient-to-t from-white to-gray-300 text-gray-600 flex flex-col gap-10 md:gap-40 md:py-20
       dark:bg-gradient-to-t dark:from-black dark:to-red-950 dark:text-white py-20
       ">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-20 py-10 md:px-20 ">
@@ -158,7 +158,7 @@ function App() {
           </p>
         </div>
         <div className=" flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
-          <div className="w-[600px] left flex flex-col gap-5 max-w-[90vw] min-h-screen md:min-h-[700px]" >
+          <div className="w-[600px] left flex flex-col gap-5 max-w-[90vw] min-h-[100vh] md:min-h-[80vh]" >
             <h2 className="text-3xl font-bold ">User Interface</h2>
             <div className="left flex flex-col gap-4">
               <p>
@@ -181,12 +181,12 @@ function App() {
               </p>
             </div>
           </div>
-          <img src={uiImage} className="h-[170px] md:h-[300px] hidden md:block animate" />
+          <img src={uiImage} className="h-[170px] md:h-[300px] hidden md:block self-end animate" />
 
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
-          <img src={excelImg2} className="h-[150px] md:h-[300px] self-end md:self-center mr-[30px] md:mr-[0] left" />
-          <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
+          <img src={excelImg2} className="h-[150px] md:h-[300px] self-end md:self-start mr-[30px] md:mr-[0] left" />
+          <div className="w-[600px] animate flex flex-col gap-5 max-w-[90vw] min-h-[100vh] md:min-h-[80vh] md:justify-end ">
             <h2 className="text-3xl font-bold  text-green-500">User Manual</h2>
             <div className="animate flex flex-col gap-4">
               <p>
@@ -256,7 +256,6 @@ function App() {
 
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
-
           <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
             <h2 className="text-3xl font-bold text-green-500">USER INTERFACE: PREDICTION TABLES</h2>
             <p className="animate">
