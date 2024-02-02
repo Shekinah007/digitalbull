@@ -122,8 +122,8 @@ function App() {
       ">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-20 py-10 md:px-20 ">
           <img src={excelImg1} className="h-[100px] hidden md:block md:h-[300px] mt-10 md:mt-0 left" />
-          <p className="w-[600px] animate flex flex-col gap-5 text-sm md:text-base max-w-[90vw] md:max-w-[80vw] ">
-            <h2 className="font-bold text-2xl md:text-3xl">About</h2>
+          <p className="w-[600px] animate flex flex-col gap-5 md:text-base max-w-[90vw] md:max-w-[80vw] ">
+            <h2 className="font-bold text-3xl md:text-3xl">About</h2>
             <p className="animate">
               Digital Bull, a dedicated team of analysts, is diligently harnessing the
               power of Microsoft Excel to craft a groundbreaking software tool named
@@ -185,7 +185,7 @@ function App() {
 
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
-          <img src={excelImg2} className="h-[300px] left" />
+          <img src={excelImg2} className="h-[150px] md:h-[300px] self-end md:self-center mr-[30px] md:mr-[0] left" />
           <div className="w-[600px] animate flex flex-col gap-5  max-w-[90vw]">
             <h2 className="text-3xl font-bold  text-green-500">User Manual</h2>
             <div className="animate flex flex-col gap-4">
@@ -270,14 +270,8 @@ function App() {
       </div>
 
       <Benefits isIntersecting={isIntersecting} />
-      <Plans isIntersecting={isIntersecting} />
-      {/* <div className="min-h-screen bg-black contain">
-        <div class="parent">
-          <div class="child"></div>
-        </div>
-      </div> */}
-
       <Courses />
+      <Plans isIntersecting={isIntersecting} />
       <Footer />
 
     </div>

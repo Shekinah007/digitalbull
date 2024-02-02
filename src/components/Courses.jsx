@@ -1,12 +1,12 @@
 import "./table.css"
 export const Courses = () => {
     return (
-        <div className={`min-h-screen flex flex-col items-center justify-center gap-2 py-16 bg-white`}>
-            <h2 className="text-2xl md:text-3xl text-gray-800 font-bold ">Course Outline</h2>
-            <hr className="w-[80vw] mb-5" />
+        <div className={`min-h-screen flex flex-col items-center justify-center text-gray-200 gap-2 py-16 bg-black `}>
+            <h2 className="text-2xl md:text-3xl font-bold self-start ml-20">Course Outline</h2>
+            <hr className="w-[90vw] mb-5" />
 
-            <div div className="flex flex-col md:flex-row md:gap-10 text-sm font-semibold text-gray-800" >
-                <div className="flex flex-col gap-5 rounded-2xl box-shadow p-3 px-7 md:p-8 md:w-[540px]">
+            <div div className="flex flex-col md:flex-row md:gap-10 text-sm font-semibold" >
+                <div className="flex flex-col gap-5 rounded-2xl box-shadow p-3 px-7 md:p-8 md:w-[540px] md:border border-gray-400">
                     <div className="flex gap-10 items-center">
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">1</span>
                         <ul>
@@ -48,7 +48,7 @@ export const Courses = () => {
                     </div>
 
                 </div>
-                <div className="flex flex-col gap-5 rounded-2xl box-shadow p-3 px-7 md:p-8 md:w-[540px]">
+                <div className="flex flex-col gap-5 rounded-2xl box-shadow p-3 px-7 md:p-8 md:w-[540px] md:border border-gray-400">
                     <div className="flex gap-10 items-center">
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">6</span>
                         <ul>
