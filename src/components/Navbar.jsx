@@ -11,7 +11,7 @@ export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => 
     <nav
       className={`
       h-[60px] z-50 fixed top-0 left-0 right-0 flex flex-row justify-between items-center px-5 
-      bg-white  text-black
+      bg-white  text-black shadow
       ${darkMode && "dark:bg-black dark:text-gray-300"}
 
     `}>
@@ -22,7 +22,7 @@ export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => 
 
       <div className="flex gap-5 items-center">
         <div>
-          <a href="#top" className="nav-head font-bold text-xl md:text-xl text-red-400">DIGITAL BULL</a>
+          <a href="#top" className="nav-head font-bold text-xl md:text-xl text-red-500">DIGITAL BULL</a>
           {/* <div className="underline"></div> */}
         </div>
         <div className="gap-5 hidden md:flex text-lg">

@@ -16,14 +16,14 @@ body {
 }
 
 .nav-head:hover {
-    color: white;
+    /* color: red; */
 }
 
 .nav-head::before {
     content: "";
     width: 50%;
     height: 3px;
-    background-color: white;
+    background-color: rgb(70, 70, 70);
     position: absolute;
     left: 25%;
     bottom: -4px;
@@ -40,10 +40,6 @@ body {
 .nav-link {
     position: relative;
     transition: 0.5s
-}
-
-.nav-link:hover {
-    color: white;
 }
 
 .nav-link::before {
@@ -63,9 +59,49 @@ body {
     left: 0;
 }
 
+
+
+/* ////////////////// */
+.course-download {
+    position: relative;
+    transition: 0.5s;
+    z-index: 0;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.course-download:hover {
+    color: red;
+    border: 1px solid black;
+}
+
+.course-download::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    z-index: -10;
+    transition: 0.5s;
+}
+
+.course-download:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+/* //////////////// */
+
+
 .contact-btn {
     position: relative;
+}
 
+.contact-btn:hover {
+    color: white;
 }
 
 .contact-btn::after {
@@ -103,10 +139,13 @@ body {
     left: 0;
     border-radius: 4px;
     z-index: -10;
+    border-radius: 5px;
 }
 
 .send-email:hover::after {
     width: 100%;
+    border: 1px solid white;
+
 }
 
 

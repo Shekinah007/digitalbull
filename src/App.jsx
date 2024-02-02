@@ -104,6 +104,13 @@ function App() {
 
   return (
     <div className=" bg-black min-h-screen mt-[60px] w-full text-black">
+
+      <div className={`
+          overlay z-20 fixed mid:hidden top-0 duration-700 w-0 h-screen bg-black/70 left-0
+          ${sideBar && "w-[700px]"}
+      `}></div>
+
+
       <button onClick={() => {
         window.scrollTo(0, 0)
       }} id="top-button" className={`to-top`}>
@@ -112,7 +119,7 @@ function App() {
 
       <Navbar handleSideBar={handleSideBar} sideBar={sideBar} darkMode={darkMode} handleDarkMode={setDarkMode} />
 
-      <Sidebar sideBar={sideBar} darkMode={darkMode} />
+      <Sidebar sideBar={sideBar} darkMode={darkMode} handleSideBar={handleSideBar} />
 
       <div id="top"
         className={`relative
@@ -140,7 +147,7 @@ function App() {
       ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-gray-300"}
     `}>
         <div className="flex flex-col-reverse overflow-x-hidden md:flex-row items-center justify-center md:gap-20 py-10 md:px-20 ">
-          <img src={honeyImg2} alt="" className="absolute hidden md:block w-[600px]   rotate-45 -left-[300px] top-[1000px] pattern-img " />
+          <img src={honeyImg2} alt="" className="absolute md:opacity-100 invert md:block w-[600px]   rotate-45 -left-[300px] top-[1000px] pattern-img " />
           <img src={excelImg1} className="z-10 h-[100px] hidden md:block md:h-[300px] mt-10 md:mt-0 left" />
           <div className="relative w-[600px] flex flex-col gap-2 md:text-base max-w-[90vw] md:max-w-[80vw] ">
             <h2 className="z-10 font-bold text-3xl md:text-3xl">About</h2>
@@ -178,7 +185,10 @@ function App() {
             </p>
           </div>
         </div>
-        <div className=" flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
+        <div className="relative flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20">
+          <img src={honeyImg} alt="" className="absolute  md:block w-[600px] invert rotate-45 -right-[200px] md:-right-[400px] top-[700px] pattern-img " />
+          <img src={honeyImg} alt="" className="absolute  md:block w-[600px]  rotate-45 -left-[200px] md:-left-[400px] top-[1000px] pattern-img " />
+
           <div className="w-[600px] left flex flex-col gap-2 max-w-[90vw] py-10 md:py-5  md:min-h-[80vh]" >
             <h2 className="text-3xl font-bold text-red-500">User Interface</h2>
             <div className="left flex flex-col gap-4">

@@ -11,12 +11,12 @@ export const Courses = () => {
                     download="DigitatBull course PDF document"
                     target="_blank"
                     rel="noreferrer"
-                    className="border hidden md:block border-white p-2 rounded-lg md:mr-[120px]"
+                    className="border hidden md:block border-white p-2 rounded-lg md:mr-[120px] course-download"
                 >
                     Download Course PDF
                 </a>
             </div>
-            <hr className="w-[90vw] mb-5" />
+            <hr className="w-[82vw] mb-5" />
 
             <div div className="flex flex-col md:flex-row md:gap-10 text-sm font-semibold" >
                 <div className="flex flex-col gap-5 rounded-2xl box-shadow p-3 px-7 md:p-8 md:w-[540px] md:border border-gray-400 left">
