@@ -3,6 +3,7 @@ export default function Sidebar({ sideBar, darkMode, handleSideBar }) {
     return (
         <div
             className={`
+            border-r-2 border-white
              z-50 w-[300px] overflow-hidden md:hidden pt-[50px] text-lg  min-h-[calc(100vh-60px)]
              fixed top-min-h-[calc(100vh-60px)] flex flex-col items-start gap-6 p-5
              bg-white text-black
