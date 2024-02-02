@@ -194,7 +194,7 @@ body {
 } */
 
 .to-top {
-    opacity: 1;
+    opacity: 0;
     transform: translateY(20px);
     /* background-color: red; */
 }

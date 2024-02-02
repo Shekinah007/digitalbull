@@ -6,20 +6,31 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode'
 
 
 export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => {
+
+  const closeSideBar = () => {
+    handleSideBar(false);
+  }
+
   return (
     <nav
       className="h-[60px] z-50 fixed top-0 left-0 right-0 bg-white bg-gradient-to-t from-white to-gray-300 flex flex-row justify-between items-center px-5 text-black
       dark:bg-gradient-to-t dark:from-black dark:to-black dark:text-white
     ">
+
+      <div className="absolute top-[58px] left-0 w-full bg-black rounded-full h-1 mb-4 dark:bg-black">
+        <div id="myBar" className="bg-blue-500 h-1 rounded-full dark:bg-red-500 myBar" style={{ width: "45%" }} ></div>
+      </div>
+
       <div className="flex gap-5 items-center">
         <div>
           <a href="#top" className="nav-head font-bold text-xl md:text-xl text-red-400">DIGITAL BULL</a>
           {/* <div className="underline"></div> */}
         </div>
-        <div className="gap-5 hidden md:flex">
+        <div className="gap-5 hidden md:flex text-lg">
           <a href="#about" className="nav-link font-semibold text-gray-300">About</a>
           <a href="#learning-goals" className="nav-link font-semibold text-gray-300">What you will learn</a>
           <a href="#course-outline" className="nav-link font-semibold text-gray-300">Course Outline</a>
+          <a href="#plans" className="nav-link font-semibold text-gray-300">Plans</a>
         </div>
       </div>
       <a href="mailto:digitalbull@gmail.com"

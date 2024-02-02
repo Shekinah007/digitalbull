@@ -41,15 +41,16 @@ function App() {
 
   useEffect(() => {
 
+    // Progress bar function
+    window.onscroll = function () { myFunction() };
 
-    // window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
 
-    // function myFunction() {
-    //   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    //   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    //   var scrolled = (winScroll / height) * 100;
-    //   document.getElementById("myBar").style.width = scrolled + "%";
-    // }
+    }
 
     let classes = document.querySelectorAll(".animate, .left, .fade, .card, .top-enter")
 
@@ -88,7 +89,7 @@ function App() {
     const topObserver = new IntersectionObserver((entry) => {
       console.log("Entry:", entry)
       if (entry.isIntersecting) {
-        topButton.classList.toggle("show-top-btn");
+        topButton.classList.add("show-top-btn");
         console.log("Intersectionlsfnnwewewe")
         console.log("TopBUTTON", topButton)
       }
@@ -112,14 +113,6 @@ function App() {
       }} id="top-button" className={` fixed bottom-[30px] right-[30px] to-top`}>
         <FaArrowAltCircleUp size="50px" color="#686868da" />
       </button>
-
-
-
-      {/* <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
-        <div className="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style={{ width: "45%" }} ></div>
-      </div> */}
-
-
 
       <Navbar handleSideBar={handleSideBar} sideBar={sideBar} darkMode={darkMode} handleDarkMode={setDarkMode} />
 
