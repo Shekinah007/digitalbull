@@ -156,7 +156,7 @@ function App() {
         {/* <img src={gridDia} alt="" className="absolute w-[600px]  invert -z-1 rotate-12 -right-[20px] -top-[100px] pattern-img " /> */}
         <div className="md:w-[500px] flex flex-col gap-5 z-10">
           {/* <h1 className="text-4xl font-bold self-start animate">TRADE WITH CONFIDENCE</h1> */}
-          <h1 id="header-text" className="text-3xl header-text md:text-4xl font-bold self-start animate">
+          <h1 id="header-text" className="text-2xl header-text md:text-4xl font-bold self-start animate">
             <TypeAnimation
               cursor={false}
               className={""}
