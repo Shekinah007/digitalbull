@@ -125,10 +125,6 @@ function App() {
 
   return (
     <div className=" bg-black min-h-screen mt-[60px] w-full text-black dark:text-white">
-      {/* <div ref={parallax.ref} className="spinner bg-blue-500 h-[300px] w-[300px]">
-        <p>Hello world</p>
-      </div> */}
-
       <div className={`
           overlay z-20 fixed mid:hidden top-0 duration-700 transition-all w-0 h-screen bg-black/70 left-0
           ${sideBar && "w-[700px]"}

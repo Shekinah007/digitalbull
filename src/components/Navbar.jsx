@@ -17,7 +17,7 @@ export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => 
     `}>
 
       <div className="absolute top-[58px] left-0 w-full bg-black rounded-full h-1 mb-4 dark:bg-black/0">
-        <div id="myBar" className="bg-blue-500 h-1 rounded-full dark:bg-red-500 myBar" style={{ width: "45%" }} ></div>
+        <div id="myBar" className="bg-blue-500 h-1 rounded-full dark:bg-red-500 myBar" style={{ width: "0%" }} ></div>
       </div>
 
       <div className="flex gap-5 items-center">
