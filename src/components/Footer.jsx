@@ -16,7 +16,7 @@ export const Footer = () => {
                         </div>
                     </p>
                     <p>
-                        A Q/A session will be held withing 2 weeks of receiving the tool to address
+                        A Q/A session will be held within 2 weeks of receiving the tool to address
                         question on tool use and functionality
                     </p>
                 </div>
