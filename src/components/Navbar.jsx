@@ -11,8 +11,8 @@ export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => 
     <nav
       className={`
       h-[60px] z-50 fixed top-0 left-0 right-0 flex flex-row justify-between items-center px-5 
-      bg-white  text-black shadow
-      ${darkMode && "dark:bg-black dark:text-gray-300"}
+      bg-white  text-black shadow duration-100
+      ${darkMode && "dark:bg-black text-white"}
 
     `}>
 
@@ -32,20 +32,26 @@ export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => 
           <a href="#plans" className="nav-link font-semibold ">Plans</a>
         </div>
       </div>
-      <a href="mailto:digitalbull@gmail.com"
-        className="hidden md:block rounded-md border-2 border-gray-400 
-        p-1 px-2 contact hover:border-white contact-btn">
-        Contact Us
-      </a>
 
-      <div className="fixed bottom-[70px] right-[30px]">
-        <DarkModeSwitch
-          // style={{ position: 'fixed', bottom: "0" }}
-          checked={darkMode}
-          onChange={handleDarkMode}
-          size={45}
-        />
+      <div className="flex gap-5">
+
+        <a href="mailto:digitalbull@gmail.com"
+          className="hidden md:block rounded-md border-2 border-gray-400
+          p-1 px-2 contact hover:border-white contact-btn">
+          Contact Us
+        </a>
+
+        <div className="hidden md:block z-10">
+          <DarkModeSwitch
+            // style={{ position: 'fixed', bottom: "0" }}
+            checked={darkMode}
+            onChange={handleDarkMode}
+            size={35}
+          />
+        </div>
+
       </div>
+
 
       <div className="md:hidden">
         <Hamburger toggle={handleSideBar} toggled={sideBar} />
