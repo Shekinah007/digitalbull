@@ -169,9 +169,17 @@ function App() {
                 'TRADE SKILLFULLY',
                 1000,
                 'DIGITAL BULL',
-                (el) => el.classList.add("text-red-500"),
+                (el) => {
+                  el.classList.add("text-red-500");
+                  el.classList.add("scale-125");
+                  el.classList.add("translate-x-6")
+                },
                 1000,
-                (el) => el.classList.remove("text-red-500"),
+                (el) => {
+                  el.classList.remove("text-red-500")
+                  el.classList.remove("scale-125")
+                  el.classList.remove("translate-x-6")
+                },
               ]}
               wrapper="span"
               speed={20}
@@ -353,7 +361,7 @@ function App() {
 
         <Benefits isIntersecting={isIntersecting} darkMode={darkMode} />
         <Courses />
-        <Plans isIntersecting={isIntersecting} />
+        <Plans darkMode={darkMode} isIntersecting={isIntersecting} />
         <Footer />
 
       </div>

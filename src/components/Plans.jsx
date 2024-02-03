@@ -6,7 +6,7 @@ import img2 from "../assets/images/honey-comb.png";
 import { ParallaxBanner } from 'react-scroll-parallax';
 
 
-export const Plans = ({ isIntersecting }) => {
+export const Plans = ({ isIntersecting, darkMode }) => {
     return (
         // <ParallaxBanner
         //     layers={[
@@ -25,7 +25,10 @@ export const Plans = ({ isIntersecting }) => {
         //     className="aspect-[2/1]"
         // >
 
-        <div id="plans" className="min-h-screen md:min-h-[300px] flex flex-col items-center justify-center gap-5 bg-white py-10 text-gray-500">
+        <div id="plans" className={`min-h-screen md:min-h-[550px] flex flex-col items-center justify-center gap-5 bg-white py-10 text-gray-500
+        bg-gradient-to-t from-white to-gray-400 border-y-2 border-white
+        ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-gray-800 text-white"}
+        `}>
 
 
 
