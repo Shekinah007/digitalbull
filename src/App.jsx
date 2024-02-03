@@ -130,7 +130,7 @@ function App() {
       </div> */}
 
       <div className={`
-          overlay z-20 fixed mid:hidden top-0 duration-700 w-0 h-screen bg-black/70 left-0
+          overlay z-20 fixed mid:hidden top-0 duration-700 transition-all w-0 h-screen bg-black/70 left-0
           ${sideBar && "w-[700px]"}
       `}></div>
 
