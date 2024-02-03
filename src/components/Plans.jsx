@@ -26,11 +26,9 @@ export const Plans = ({ isIntersecting, darkMode }) => {
         // >
 
         <div id="plans" className={`min-h-screen md:min-h-[550px] flex flex-col items-center justify-center gap-5 bg-white py-10 text-gray-500
-        bg-gradient-to-t from-white to-gray-400 border-y-2 border-white
+        bg-gradient-to-b from-white to-gray-400 border-y-2 border-white
         ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-gray-800 text-white"}
         `}>
-
-
 
 
             <h2 className="text-3xl font-bold"><span className="text-red-500">Flexible</span> Plans</h2>
