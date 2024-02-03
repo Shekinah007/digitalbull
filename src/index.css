@@ -16,5 +16,6 @@ body {
     padding: 0;
     transition: 0.7s;
     transition-property: transform;
+    scroll-behavior: smooth;
     /* overflow-x: hidden; */
 }

@@ -1,7 +1,35 @@
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+
+import img1 from "../assets/images/bgPattern.png";
+import img2 from "../assets/images/honey-comb.png";
+
+import { ParallaxBanner } from 'react-scroll-parallax';
+
+
 export const Plans = ({ isIntersecting }) => {
     return (
+        // <ParallaxBanner
+        //     layers={[
+        //         { image: img1, speed: -20 },
+        //         { image: img2, speed: -10 },
+
+        //         {
+        //             speed: -15,
+        //             children: (
+        //                 <div className="absolute inset-0 flex items-center justify-center">
+        //                     <h1 className="text-8xl text-white font-thin">Hello World!</h1>
+        //                 </div>
+        //             ),
+        //         },
+        //     ]}
+        //     className="aspect-[2/1]"
+        // >
+
         <div id="plans" className="min-h-screen md:min-h-[300px] flex flex-col items-center justify-center gap-5 bg-white py-10 text-gray-500">
+
+
+
+
             <h2 className="text-3xl font-bold"><span className="text-red-500">Flexible</span> Plans</h2>
             <p className="text-lg font-semibold">Choose a plan that works best for you</p>
             <div className="flex flex-wrap items-center justify-center gap-10">
@@ -60,5 +88,6 @@ export const Plans = ({ isIntersecting }) => {
 
             </div>
         </div>
+        // </ParallaxBanner >
     )
 }

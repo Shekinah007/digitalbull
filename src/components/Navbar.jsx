@@ -27,7 +27,7 @@ export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => 
         </div>
         <div className="gap-5 hidden md:flex text-lg">
           <a href="#about" className="nav-link font-semibold ">About</a>
-          <a href="#learning-goals" className="nav-link font-semibold">What you will learn</a>
+          <a href="#learning-goals" className="nav-link font-semibold">Learning Goals</a>
           <a href="#course-outline" className="nav-link font-semibold ">Course Outline</a>
           <a href="#plans" className="nav-link font-semibold ">Plans</a>
         </div>

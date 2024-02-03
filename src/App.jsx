@@ -7,6 +7,8 @@ import Sidebar from './components/Sidebar';
 
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
+import { TypeAnimation } from 'react-type-animation';
+import { useParallax } from "react-scroll-parallax";
 
 import graphImg from "./assets/images/graph-3078539_1920.png"
 import uiImage from "./assets/images/illustrations/undraw_data_trends_re_2cdy.svg"
@@ -103,9 +105,29 @@ function App() {
   }, [isIntersecting])
 
 
+  const parallax = useParallax({
+    rotate: [0, 50],
+  })
+
+  const parallax2 = useParallax({
+    easing: 'easeOutQuad',
+    rotate: [0, 60]
+  })
+
+  const scale = useParallax({
+    easing: 'easeOutQuad',
+    scale: [1, 0.8, 'easeInQuad'],
+  });
+  const scale2 = useParallax({
+    easing: 'easeOutQuad',
+    scale: [1, 0.8, 'easeInQuad'],
+  });
 
   return (
     <div className=" bg-black min-h-screen mt-[60px] w-full text-black dark:text-white">
+      {/* <div ref={parallax.ref} className="spinner bg-blue-500 h-[300px] w-[300px]">
+        <p>Hello world</p>
+      </div> */}
 
       <div className={`
           overlay z-20 fixed mid:hidden top-0 duration-700 w-0 h-screen bg-black/70 left-0
@@ -130,14 +152,38 @@ function App() {
           ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 text-white"}
         hero-section overflow-x-hidden
         `}>
-        <img src={heroBgImg} alt="" className="absolute w-[300px] md:w-[600px]  invert -z-1 rotate-45 md:rotate-45 -right-[20px] -top-[200px] pattern-img " />
+        <img ref={parallax.ref} src={heroBgImg} alt="" className="absolute w-[300px] md:w-[600px]  invert -z-1 rotate-45 md:rotate-45 -right-[20px] -top-[200px] pattern-img " />
         {/* <img src={gridDia} alt="" className="absolute w-[600px]  invert -z-1 rotate-12 -right-[20px] -top-[100px] pattern-img " /> */}
         <div className="md:w-[500px] flex flex-col gap-5 z-10">
-          <h1 className="text-4xl font-bold self-start animate">TRADE WITH CONFIDENCE</h1>
+          {/* <h1 className="text-4xl font-bold self-start animate">TRADE WITH CONFIDENCE</h1> */}
+          <h1 id="header-text" className="text-3xl header-text md:text-4xl font-bold self-start animate">
+            <TypeAnimation
+              cursor={false}
+              className={""}
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                'TRADE WITH CONFIDENCE',
+                1000, // wait 1s before replacing "Mice" WITH "Hamsters"
+                'TRADE WITH KNOWLEDGE',
+                1000,
+                'TRADE SKILLFULLY',
+                1000,
+                'DIGITAL BULL',
+                (el) => el.classList.add("text-red-500"),
+                1000,
+                (el) => el.classList.remove("text-red-500"),
+              ]}
+              wrapper="span"
+              speed={20}
+              style={{ fontSize: '1em', display: 'inline-block' }}
+              repeat={Infinity}
+            />
+
+          </h1>
           <p className="left"> Digital bull provides unique training on stock price data analysis and give you the tools to explore the
             stock market, gain insights and make informed trading decisions.
           </p>
-          <a href="#plans" className="text-white sign-btn self-start bg-red-500 font-semibold p-2 rounded-md animate">Sign Up For a Course</a>
+          <a href="#plans" className="text-white sign-btn self-start  font-semibold p-2 rounded-md animate">Sign Up For a Course</a>
         </div>
         <img src={climbImg} alt="graph image" className="w-[500px] z-10 top-enter " />
       </div>
@@ -149,7 +195,7 @@ function App() {
       ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-white"}
     `}>
         <div className="flex flex-col-reverse overflow-x-hidden md:flex-row items-center justify-center md:gap-20 py-10 md:px-20 ">
-          <img src={honeyImg2} alt="" className={`absolute  ${!darkMode && 'invert'} dark:opacity-50 md:block w-[600px] rotate-45 -left-[200px]   md:-left-[300px] top-[1000px] pattern-img `} />
+          <img src={honeyImg2} ref={parallax2.ref} alt="" className={`absolute  ${!darkMode && 'invert'} dark:opacity-50 md:block w-[600px] rotate-45 -left-[200px]   md:-left-[300px] top-[1000px] pattern-img `} />
           <img src={excelImg1} className="z-10 h-[100px] hidden md:block md:h-[300px] mt-10 md:mt-0 left" />
           <div className="relative w-[600px] flex flex-col gap-2 md:text-base max-w-[90vw] md:max-w-[80vw] ">
             <h2 className="z-10 font-bold text-3xl md:text-3xl">About</h2>
@@ -188,8 +234,8 @@ function App() {
           </div>
         </div>
         <div className="relative flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20">
-          <img src={honeyImg} alt="" className={`absolute  md:block w-[600px] invert rotate-45 -right-[200px] md:-right-[400px] top-[700px] pattern-img `} />
-          <img src={honeyImg} alt="" className={`absolute  md:block w-[600px] opacity-10 md:opacity-100  rotate-45 -left-[200px] md:-left-[400px] top-[1000px] pattern-img`} />
+          <img src={honeyImg} ref={scale.ref} alt="" className={`absolute  md:block w-[800px] ${darkMode && "invert"} rotate-45 -right-[200px] md:-right-[400px] top-[700px] pattern-img `} />
+          <img src={honeyImg} ref={scale2.ref} alt="" className={`absolute  md:block w-[600px] opacity-60 ${darkMode && "invert"} invert md:opacity-100  rotate-45 -left-[200px] md:-left-[400px] top-[1300px] pattern-img`} />
 
           <div className="w-[600px] left flex flex-col gap-2 max-w-[90vw] py-10 md:py-5  md:min-h-[80vh]" >
             <h2 className="text-3xl font-bold text-red-500">User Interface</h2>
@@ -203,7 +249,7 @@ function App() {
                 ensuring both novice and seasoned investors can effortlessly harness its
                 power.
               </p>
-              <img src={uiImage} className="h-[170px] md:hidden md:h-[300px] animate" />
+              <img src={uiImage} className="h-[170px] md:hidden md:h-[300px] " />
 
               <p>
                 With sleek visuals, interactive charts, and streamlined controls,
@@ -243,7 +289,7 @@ function App() {
 
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
+        <div className="flex relative overflow-x-hidden flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
           <div className="w-[600px] animate flex flex-col gap-2 py-10 md:py-5  max-w-[90vw]">
             <h2 className="text-3xl font-semibold text-red-500">Q/A Session</h2>
             <div className="flex flex-col gap-4">
@@ -260,11 +306,13 @@ function App() {
                   guide, addressing user queries and unlocking the nuances of the
                 </p>
 
+                {/* <img src={dotImg} alt="" className={`absolute md:block w-[600px] opacity-60 ${!darkMode && "invert"}  md:opacity-100  rotate-45 top-[1000px] -right-[200px] md:-right-[400px] md:top-[600px]`} /> */}
+
                 <p className="animate">Stock Price Visualization Tool (S.P.V.T).</p>
               </p>
               <img src={questionsImg} className="h-[150px] animate md:hidden left" />
               <p className="animate">
-                Led by knowledgeable instructors, participants gain firsthand insights into
+                Led by CONFIDENCEable instructors, participants gain firsthand insights into
                 navigating the tool's features, interpreting visualizations, and optimizing
                 its potential for informed decision-making. The Zoom instructor-led class
                 transforms the learning experience into a collaborative journey, ensuring users

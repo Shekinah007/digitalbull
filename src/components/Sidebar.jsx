@@ -5,19 +5,20 @@ export default function Sidebar({ sideBar, darkMode, handleSideBar, handleDarkMo
         <div
             className={`
             border-r-2 border-white 
-             z-50 w-[300px] overflow-hidden md:hidden pt-[80px] text-lg  min-h-[calc(100vh-60px)]
+             z-50 w-[250px] overflow-hidden md:hidden pt-[30px] text-lg  min-h-[calc(100vh-60px)]
              fixed top-min-h-[calc(100vh-60px)] flex flex-col items-start gap-6 p-5
-             bg-white text-black
-          ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-gray-300"}
+             bg-white text-black font-bold
+          ${darkMode && "dark:bg-gradient-to-b dark:from-black dark:to-red-950 dark:text-gray-200"}
             
              ${!sideBar && "-translate-x-[300px]"}
              `}>
-            <a href="#learning-goals" onClick={() => handleSideBar(false)}>What you will learn</a>
-            <a href="#" onClick={() => handleSideBar(false)}>Training Results</a>
+            <a href="#about" onClick={() => handleSideBar(false)}>About</a>
+            <a href="#learning-goals" onClick={() => handleSideBar(false)}>Learning Goals</a>
             <a href="#course-outline" onClick={() => handleSideBar(false)}>Course Outline</a>
+            <a href="#plans" onClick={() => handleSideBar(false)}>Plans</a>
             <a href="mailto:digitalbull@gmail.com" className="rounded-md border-2 border-red-300 p-2 contact">Contact Us</a>
 
-            <div className="fixed top-[80px] z-10 left-[25px]">
+            <div className="fixed bottom-[20px] z-10 left-[125px]">
                 <DarkModeSwitch
                     // style={{ position: 'fixed', bottom: "0" }}
                     checked={darkMode}
