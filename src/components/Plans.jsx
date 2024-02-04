@@ -72,7 +72,7 @@ export const Plans = ({ isIntersecting, darkMode }) => {
                         <div className="text-sm flex flex-col gap-2">
                             <div className="flex items-center gap-2">
                                 <IoMdCheckmarkCircleOutline color="green" size="20px" />
-                                <p>S.P.V.T One-year subscription</p>
+                                <p>S.P.V.T Two-year subscription</p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <IoMdCheckmarkCircleOutline color="green" size="20px" />

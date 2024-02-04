@@ -267,6 +267,30 @@ function App() {
           <img src={uiImage} className="h-[170px] md:h-[300px] hidden md:block self-end animate" />
 
         </div>
+
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 pt-[70px] md:gap-20 md:px-20 ">
+          <img src={UIgrapghImg} className=" w-[80vw] md:h-[200px] md:w-[400px] left" />
+          <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
+            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
+            <p className="animate">
+              Easily generate stock profile graphs from Raw stock data to visualize
+              historical stock price movements
+            </p>
+          </div>
+
+        </div>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
+          <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
+            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: PREDICTION TABLES</h2>
+            <p className="animate">
+              Visualize support and resistance with prediction tables and get historical perspective on
+              breaks of support and resistance.
+            </p>
+          </div>
+          <img src={UIImg} className="w-[80vw] md:h-[200px] md:w-[400px] left" />
+
+        </div>
+
         <div className="flex flex-col md:flex-row items-center justify-center py-10 md:py-5 md:gap-20 md:px-20 ">
           <img src={excelImg2} className="h-[150px] md:h-[300px] self-end md:self-start mr-[30px] md:mr-[0] left" />
           <div className="w-[600px] animate flex flex-col gap-2 max-w-[90vw]  md:min-h-[80vh] md:justify-end ">
@@ -329,33 +353,11 @@ function App() {
           <img src={questionsImg} className="h-[300px] hidden md:block left" />
 
         </div>
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 pt-[70px] md:gap-20 md:px-20 ">
-          <img src={UIgrapghImg} className=" w-[80vw] md:h-[200px] md:w-[400px] left" />
-          <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
-            <p className="animate">
-              Easily generate stock profile graphs from Raw stock data to visualize
-              historical stock price movements
-            </p>
-          </div>
 
-        </div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
-          <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: PREDICTION TABLES</h2>
-            <p className="animate">
-              Visualize support and resistance with prediction tables and get historical perspective on
-              breaks of support and resistance.
-            </p>
-          </div>
-          <img src={UIImg} className="w-[80vw] md:h-[200px] md:w-[400px] left" />
-
-        </div>
       </div>
 
       <div id="mid-point" className="flex flex-col">
-
-        <Benefits isIntersecting={isIntersecting} darkMode={darkMode} />
+        {/* <Benefits isIntersecting={isIntersecting} darkMode={darkMode} /> */}
         <Courses />
         <Plans darkMode={darkMode} isIntersecting={isIntersecting} />
         <Footer />

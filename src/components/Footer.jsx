@@ -22,14 +22,14 @@ export const Footer = () => {
                 </div>
                 <div className='hidden md:flex self-end md:self-start mt-[5px] gap-3 items-center '>
                     <span>👉</span>
-                    <a href="mailto:digitabull@gmail.com"
+                    <a href="mailto:digitaldrbull@gmail.com"
                         className="p-2 rounded-md text-white send-email">Send us an email</a>
                 </div>
 
             </div>
             <div className="flex flex-col items-center">
                 <h2 className="text-3xl text-red-500 font-bold">DIGITALBULL</h2>
-                <p className="text-xs text-gray-500">digitalbull@gmail.com</p>
+                <p className="text-xs text-gray-500">digitaldrbull@gmail.com</p>
             </div>
         </footer>
     )
