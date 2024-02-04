@@ -57,7 +57,7 @@ export const Plans = ({ isIntersecting, darkMode }) => {
                                 <p>Q/A Session</p>
                             </div>
                         </div>
-                        <button className="cursor-pointer bg-green-500 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">250</button>
+                        <button className="cursor-pointer bg-green-500 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">$250</button>
                     </div>
                 </div>
 
@@ -83,7 +83,7 @@ export const Plans = ({ isIntersecting, darkMode }) => {
                                 <p>Q/A Session</p>
                             </div>
                         </div>
-                        <button className="shadow bg-green-500 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">400</button>
+                        <button className="shadow bg-green-500 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">$400</button>
                     </div>
                 </div>
 
