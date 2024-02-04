@@ -28,7 +28,7 @@ export const Footer = () => {
 
             </div>
             <div className="flex flex-col items-center">
-                <h2 className="text-3xl text-red-500 font-bold">DIGITALBULL</h2>
+                <h2 className="text-3xl text-red-500 font-bold">DIGITAL BULL</h2>
                 <p className="text-xs text-gray-500">digitaldrbull@gmail.com</p>
             </div>
         </footer>
