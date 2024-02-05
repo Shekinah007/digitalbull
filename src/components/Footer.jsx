@@ -17,7 +17,7 @@ export const Footer = () => {
                     </p>
                     <p>
                         A Q/A session will be held within 2 weeks of receiving the tool to address
-                        question on tool use and functionality
+                        questions on tool use and functionalities.
                     </p>
                 </div>
                 <div className='hidden md:flex self-end md:self-start mt-[5px] gap-3 items-center '>
