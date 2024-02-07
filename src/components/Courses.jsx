@@ -18,7 +18,7 @@ export const Courses = () => {
             </div>
             <hr className="w-[82vw] mb-5" />
 
-            <div div className="flex flex-col md:flex-row md:gap-10 text-sm font-semibold" >
+            <div className="flex flex-col md:flex-row md:gap-10 text-sm font-semibold" >
                 <div className="flex flex-col gap-5 rounded-2xl box-shadow p-3 px-7 md:p-8 md:w-[540px] md:border border-gray-400 left">
                     <div className="flex gap-7 md:gap-10 items-center">
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">1</span>

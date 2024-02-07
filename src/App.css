@@ -71,7 +71,7 @@ body {
 
 .course-download:hover {
     color: var(--primary-red);
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .course-download::before {

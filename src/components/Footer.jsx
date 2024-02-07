@@ -12,7 +12,7 @@ export const Footer = () => {
 
                         <div className='self-center md:hidden mt-[5px] flex flex-col gap-3 items-center'>
                             <span>👇</span>
-                            <a href="mailto:digitabull@gmail.com" className="p-2 rounded-md bg-red-500 text-white">Send us an email</a>
+                            <a href="mailto:digitaldrbull@gmail.com" className="p-2 rounded-md bg-red-500 text-white">Send us an email</a>
                         </div>
                     </p>
                     <p>
