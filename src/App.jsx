@@ -271,7 +271,7 @@ function App() {
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 pt-[70px] md:gap-20 md:px-20 ">
           <img src={UIgrapghImg} className=" w-[80vw] md:h-[200px] md:w-[400px] left" />
           <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
+            <h2 className="text-3xl font-bold text-red-500">User Interface: Stock Profile Graphs</h2>
             <p className="animate">
               Easily generate stock profile graphs from Raw stock data to visualize
               historical stock price movements
@@ -281,10 +281,10 @@ function App() {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
           <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: PREDICTION TABLES</h2>
+            <h2 className="text-3xl font-bold text-red-500">User Interface: Prediction Tables</h2>
             <p className="animate">
               Visualize support and resistance with prediction tables and get historical perspective on
-              breaks of support and resistance.
+              breaches of support and resistance thresholds.
             </p>
           </div>
           <img src={UIImg} className="w-[80vw] md:h-[200px] md:w-[400px] left" />
