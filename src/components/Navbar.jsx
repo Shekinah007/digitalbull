@@ -35,7 +35,7 @@ export const Navbar = ({ handleSideBar, sideBar, darkMode, handleDarkMode }) => 
 
       <div className="flex gap-5">
 
-        <a href="mailto:digitalbull@gmail.com"
+        <a href="mailto:info@digitalbullmarket.com"
           className="hidden md:block rounded-md border-2 border-gray-400
           p-1 px-2 contact hover:border-white contact-btn">
           Contact Us
