@@ -16,7 +16,7 @@ export default function Sidebar({ sideBar, darkMode, handleSideBar, handleDarkMo
             <a href="#learning-goals" onClick={() => handleSideBar(false)}>Learning Goals</a>
             <a href="#course-outline" onClick={() => handleSideBar(false)}>Course Outline</a>
             <a href="#plans" onClick={() => handleSideBar(false)}>Plans</a>
-            <a href="mailto:digitalbull@gmail.com" className="rounded-md border-2 border-red-300 p-2 contact">Contact Us</a>
+            <a href="mailto:info@digitalbullmarket.com" className="rounded-md border-2 border-red-300 p-2 contact">Contact Us</a>
 
             <div className="fixed bottom-[20px] z-10 left-[125px]">
                 <DarkModeSwitch
