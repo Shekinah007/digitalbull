@@ -22,7 +22,7 @@ export const Footer = () => {
                 </div>
                 <div className='hidden md:flex self-end md:self-start mt-[5px] gap-3 items-center '>
                     <span>👉</span>
-                    <a href="mailto:digitaldrbull@gmail.com"
+                    <a href="mailto:info@digitalbullmarket.com"
                         className="p-2 rounded-md text-white send-email">Send us an email</a>
                 </div>
 
