@@ -281,7 +281,7 @@ function App() {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
           <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-red-500">User Interface: Prediction Tables</h2>
+            <h2 className="text-3xl font-bold text-red-500">User Interface: Prediction/Threshold Tables</h2>
             <p className="animate">
               Visualize support and resistance with prediction tables and get historical perspective on
               breaches of support and resistance thresholds.
@@ -340,7 +340,7 @@ function App() {
               </p>
               <img src={questionsImg} className="h-[150px] animate md:hidden left" />
               <p className="animate">
-                Led by CONFIDENCEable instructors, participants gain firsthand insights into
+                Led by able instructors, participants gain firsthand insights into
                 navigating the tool's features, interpreting visualizations, and optimizing
                 its potential for informed decision-making. The Zoom instructor-led class
                 transforms the learning experience into a collaborative journey, ensuring users
