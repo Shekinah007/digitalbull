@@ -184,7 +184,7 @@ function App() {
             />
 
           </h1>
-          <p className="left"> Digital bull provides unique training on stock price data analysis and give you the tools to explore the
+          <p className="left"> Digital bull provides unique training on stock price data analysis and gives you the tools to explore the
             stock market, gain insights and make informed trading decisions.
           </p>
           <a href="#plans" className="text-white sign-btn self-start  font-semibold p-2 rounded-md animate">Sign Up For a Course</a>
