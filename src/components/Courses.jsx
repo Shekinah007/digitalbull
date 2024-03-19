@@ -6,15 +6,7 @@ export const Courses = () => {
         <div id="course-outline" className={`min-h-screen flex flex-col items-center overflow-x-hidden justify-center text-gray-200 gap-2 py-16 bg-gray-600 `}>
             <div className="flex justify-between w-full">
                 <h2 className="text-2xl md:text-3xl font-bold md:self-start ml-[30px] md:ml-[120px] ">Course Outline</h2>
-                <a
-                    href={CourseList}
-                    download="DigitatBull course PDF document"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border hidden md:block border-white p-2 rounded-lg md:mr-[120px] course-download"
-                >
-                    Download Course PDF
-                </a>
+
             </div>
             <hr className="w-[82vw] mb-5" />
 
@@ -92,15 +84,7 @@ export const Courses = () => {
 
                 </div>
             </div >
-            <a
-                href={CourseList}
-                download="DigitatBull course PDF document"
-                target="_blank"
-                rel="noreferrer"
-                className="border md:hidden border-white p-2 rounded-lg mt-[10px]"
-            >
-                Download Course PDF
-            </a>
+          
         </div >
     )
 }
