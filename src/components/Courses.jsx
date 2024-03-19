@@ -30,8 +30,8 @@ export const Courses = () => {
                     <div className="flex   gap-7 md:gap-10 items-center">
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">2</span>
                         <ul>
-                            <li>Zone 1 and  Zone 4 indicators (PULL-DOWNS and PUSH-UPS)</li>
-                            <li>Zone 2 and Zone 3 indicators (DIPS and PEAKS)</li>
+                            <li>ZONE 1 and  ZONE 4 indicators (PULL-DOWNS and PUSH-UPS)</li>
+                            <li>ZONE 2 and ZONE 3 indicators (DIPS and PEAKS)</li>
                         </ul>
                     </div>
                     <div className="flex   gap-7 md:gap-10 items-center">
@@ -46,7 +46,7 @@ export const Courses = () => {
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">4</span>
 
                         <ul>
-                            <li>% drop and %increase calculators</li>
+                            <li>% Decrease and % Increase calculators</li>
                         </ul>
                     </div>
                     <div className="flex gap-7 md:gap-10 items-center">
@@ -79,7 +79,7 @@ export const Courses = () => {
                     <div className="flex gap-7 md:gap-10 items-center">
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">9</span>
                         <ul>
-                            <li>Guidelines of using the S.P.V. tool</li>
+                            <li>Guidelines of using the S.P.V.T</li>
                         </ul>
                     </div>
                     <div className="flex gap-7 md:gap-10 items-center">
