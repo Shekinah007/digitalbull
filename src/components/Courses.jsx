@@ -34,7 +34,7 @@ export const Courses = () => {
                             <li>Zone 2 and Zone 3 indicators (DIPS and PEAKS)</li>
                         </ul>
                     </div>
-                    <div className="flex   gap-7 md:gap-10 items-center">
+                    <div className="flex gap-7 md:gap-10 items-center">
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">3</span>
                         <ul>
                             <li>PEAK prediction tables (Breaking resistance)</li>
@@ -88,8 +88,6 @@ export const Courses = () => {
                             <li>User questions</li>
                         </ul>
                     </div>
-
-
                 </div>
             </div >
             <a

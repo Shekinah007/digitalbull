@@ -1,8 +1,7 @@
-import React from 'react'
 
 export const Footer = () => {
     return (
-        <footer className="bg-black  py-10 text-gray-300 flex flex-col md:flex-row gap-10 justify-around items-center">
+        <footer className="bg-black py-10 text-gray-300 flex flex-col md:flex-row gap-10 justify-around items-center">
 
             <div className="flex flex-col md:flex-row  items-center gap-2 text-sm">
                 <div className="max-w-[80vw] md:w-[400px] flex flex-col gap-5 text-center md:text-left">
@@ -22,7 +21,7 @@ export const Footer = () => {
                 </div>
                 <div className='hidden md:flex self-end md:self-start mt-[5px] gap-3 items-center '>
                     <span>👉</span>
-                    <a href="mailto:digitaldrbull@gmail.com"
+                    <a href="mailto:digitaldrbull@gmail.com;"
                         className="p-2 rounded-md text-white send-email">Send us an email</a>
                 </div>
 
