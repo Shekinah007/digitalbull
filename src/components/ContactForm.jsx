@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import { ToastContainer, toast } from "react-toastify";
+
 export const ContactUs = ({ isOpen, setIsOpen }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,6 +14,9 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    console.log("Triggered!!");
+
     setLoading(true);
     emailjs
       .sendForm("service_noivkl2", "digitalbull_template", form.current, {
@@ -21,10 +26,16 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
         () => {
           setLoading(false);
           console.log("SUCCESS!");
+          toast("Sent Successfully!!!");
+
+          setEmail("");
+          setNumber("");
+          setName("");
         },
         (error) => {
           setLoading(false);
-          console.log("FAILED...", error);
+          toast("Something went wrong! Try again later");
+          console.log("FAILED...", error.text);
         }
       );
   };
@@ -37,11 +48,12 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
     >
       <form
         ref={form}
-        onSubmit={sendEmail}
+        onSubmit={(e) => sendEmail(e)}
         className="flex relative flex-col gap-5 w-[400px] max-w-[90vw] bg-gray-200 text-gray-800 rounded-lg p-5 py-8"
       >
         <button
           onClick={() => setIsOpen(false)}
+          type="button"
           className="shadow shadow-red-600 absolute top-2 right-5 text-red-500 font-bold bg-gray-300 w-[30px] h-[30px] flex items-center justify-center rounded-full"
         >
           X
@@ -54,7 +66,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="text-black outline-none p-2 rounded-sm"
-            required
+            // required
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -65,7 +77,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="text-black outline-none p-2 rounded-sm"
-            required
+            // required
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -76,7 +88,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
             value={number}
             onChange={(e) => setNumber(e.target.value)}
             className="text-black outline-none p-2 rounded-sm"
-            required
+            // required
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -91,11 +103,12 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
             <option value="2 years">2 years</option>
           </select>
         </div>
-        <input
-          type="submit"
-          value={loading ? "Sending..." : "Send"}
+        <button
+          value={"Send"}
           className=" rounded-md text-red-600 py-1 w-[200px] self-center text-lg font-semibold shadow shadow-gray-600"
-        />
+        >
+          {loading ? "Sending..." : "Send"}
+        </button>
       </form>
     </div>
   );
