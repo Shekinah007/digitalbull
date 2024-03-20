@@ -6,15 +6,7 @@ export const Courses = () => {
         <div id="course-outline" className={`min-h-screen flex flex-col items-center overflow-x-hidden justify-center text-gray-200 gap-2 py-16 bg-gray-600 `}>
             <div className="flex justify-between w-full">
                 <h2 className="text-2xl md:text-3xl font-bold md:self-start ml-[30px] md:ml-[120px] ">Course Outline</h2>
-                <a
-                    href={CourseList}
-                    download="DigitatBull course PDF document"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border hidden md:block border-white p-2 rounded-lg md:mr-[120px] course-download"
-                >
-                    Download Course PDF
-                </a>
+
             </div>
             <hr className="w-[82vw] mb-5" />
 
@@ -30,8 +22,8 @@ export const Courses = () => {
                     <div className="flex   gap-7 md:gap-10 items-center">
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">2</span>
                         <ul>
-                            <li>Zone 1 and  Zone 4 indicators (PULL-DOWNS and PUSH-UPS)</li>
-                            <li>Zone 2 and Zone 3 indicators (DIPS and PEAKS)</li>
+                            <li>ZONE 1 and  ZONE 4 indicators (PULL-DOWNS and PUSH-UPS)</li>
+                            <li>ZONE 2 and ZONE 3 indicators (DIPS and PEAKS)</li>
                         </ul>
                     </div>
                     <div className="flex gap-7 md:gap-10 items-center">
@@ -46,7 +38,7 @@ export const Courses = () => {
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">4</span>
 
                         <ul>
-                            <li>% drop and %increase calculators</li>
+                            <li>% Decrease and % Increase calculators</li>
                         </ul>
                     </div>
                     <div className="flex gap-7 md:gap-10 items-center">
@@ -79,7 +71,7 @@ export const Courses = () => {
                     <div className="flex gap-7 md:gap-10 items-center">
                         <span className="h-7 w-7 rounded-full bg-red-500 text-white flex items-center justify-center">9</span>
                         <ul>
-                            <li>Guidelines of using the S.P.V. tool</li>
+                            <li>Guidelines of using the S.P.V.T</li>
                         </ul>
                     </div>
                     <div className="flex gap-7 md:gap-10 items-center">
@@ -90,15 +82,7 @@ export const Courses = () => {
                     </div>
                 </div>
             </div >
-            <a
-                href={CourseList}
-                download="DigitatBull course PDF document"
-                target="_blank"
-                rel="noreferrer"
-                className="border md:hidden border-white p-2 rounded-lg mt-[10px]"
-            >
-                Download Course PDF
-            </a>
+          
         </div >
     )
 }

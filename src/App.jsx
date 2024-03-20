@@ -184,7 +184,7 @@ function App() {
             />
 
           </h1>
-          <p className="left"> Digital bull provides unique training on stock price data analysis and give you the tools to explore the
+          <p className="left"> Digital bull provides unique training on stock price data analysis and gives you the tools to explore the
             stock market, gain insights and make informed trading decisions.
           </p>
           <a href="#plans" className="text-white sign-btn self-start  font-semibold p-2 rounded-md animate">Sign Up For a Course</a>
@@ -271,7 +271,7 @@ function App() {
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 pt-[70px] md:gap-20 md:px-20 ">
           <img src={UIgrapghImg} className=" w-[80vw] md:h-[200px] md:w-[400px] left" />
           <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: STOCK PROFILE PARAGRAPHS</h2>
+            <h2 className="text-3xl font-bold text-red-500">User Interface: Stock Profile Graphs</h2>
             <p className="animate">
               Easily generate stock profile graphs from Raw stock data to visualize
               historical stock price movements
@@ -281,10 +281,10 @@ function App() {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
           <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-red-500">USER INTERFACE: PREDICTION TABLES</h2>
+            <h2 className="text-3xl font-bold text-red-500">User Interface: Prediction/Threshold Tables</h2>
             <p className="animate">
               Visualize support and resistance with prediction tables and get historical perspective on
-              breaks of support and resistance.
+              breaches of support and resistance thresholds.
             </p>
           </div>
           <img src={UIImg} className="w-[80vw] md:h-[200px] md:w-[400px] left" />
@@ -340,7 +340,7 @@ function App() {
               </p>
               <img src={questionsImg} className="h-[150px] animate md:hidden left" />
               <p className="animate">
-                Led by CONFIDENCEable instructors, participants gain firsthand insights into
+                Led by able instructors, participants gain firsthand insights into
                 navigating the tool's features, interpreting visualizations, and optimizing
                 its potential for informed decision-making. The Zoom instructor-led class
                 transforms the learning experience into a collaborative journey, ensuring users
