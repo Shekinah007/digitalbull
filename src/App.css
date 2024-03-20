@@ -1,250 +1,245 @@
 :root {
-    --primary-red: rgb(239 68 68);
-    --secondary-red: rgb(248 113 113);
+  --primary-red: rgb(239 68 68);
+  --secondary-red: rgb(248 113 113);
 }
 
 body {
-    overflow-x: hidden;
-    transition: 0.6s;
+  overflow-x: hidden;
+  transition: 0.6s;
 }
 
-
 .nav-head {
-    position: relative;
-    transition: 0.5s
+  position: relative;
+  transition: 0.5s;
 }
 
 .nav-head:hover {
-    /* color: red; */
+  /* color: red; */
 }
 
 .nav-head::before {
-    content: "";
-    width: 50%;
-    height: 3px;
-    background-color: rgb(70, 70, 70);
-    position: absolute;
-    left: 25%;
-    bottom: -4px;
-    border-radius: 5px;
-    transition: 0.3s;
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: rgb(70, 70, 70);
+  position: absolute;
+  left: 25%;
+  bottom: -4px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .nav-head:hover::before {
-    width: 80%;
-    left: 10%;
-    background-color: var(--primary-red)
+  width: 80%;
+  left: 10%;
+  background-color: var(--primary-red);
 }
 
 .nav-link {
-    position: relative;
-    transition: 0.5s
+  position: relative;
+  transition: 0.5s;
 }
 
 .nav-link::before {
-    content: "";
-    width: 0%;
-    height: 3px;
-    background-color: var(--primary-red);
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    border-radius: 5px;
-    transition: 0.3s;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: var(--primary-red);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .nav-link:hover::before {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
-
-
 
 /* ////////////////// */
 .course-download {
-    position: relative;
-    transition: 0.5s;
-    z-index: 0;
-    transition: 0.5s;
-    font-weight: bold;
+  position: relative;
+  transition: 0.5s;
+  z-index: 0;
+  transition: 0.5s;
+  font-weight: bold;
 }
 
 .course-download:hover {
-    color: var(--primary-red);
-    /* border: 1px solid black; */
+  color: var(--primary-red);
+  /* border: 1px solid black; */
 }
 
 .course-download::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 8px;
-    background-color: rgb(255, 255, 255);
-    z-index: -10;
-    transition: 0.5s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  z-index: -10;
+  transition: 0.5s;
 }
 
 .course-download:hover::before {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 /* //////////////// */
 
-
 .contact-btn {
-    position: relative;
+  position: relative;
 }
 
 .contact-btn:hover {
-    color: white;
+  color: white;
 }
 
 .contact-btn::after {
-    transition: 0.4s;
-    content: "";
-    width: 0%;
-    height: 100%;
-    background-color: var(--primary-red);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
-    z-index: -10;
+  transition: 0.4s;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: var(--primary-red);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  z-index: -10;
 }
 
 .contact-btn:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
-
 .send-email {
-    position: relative;
-    background-color: rgb(102, 102, 102);
-    z-index: 10;
+  position: relative;
+  background-color: rgb(102, 102, 102);
+  z-index: 10;
 }
 
 .send-email::after {
-    transition: 0.4s;
-    content: "";
-    width: 0%;
-    height: 100%;
-    background-color: var(--primary-red);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
-    z-index: -10;
-    border-radius: 5px;
+  transition: 0.4s;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: var(--primary-red);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  z-index: -10;
+  border-radius: 5px;
 }
 
 .send-email:hover::after {
-    width: 100%;
-    border: 1px solid white;
+  width: 100%;
+  border: 1px solid white;
 }
 
-
-
 .sign-btn {
-    border-width: 1px;
-    position: relative;
-    background-color: var(--primary-red)
+  border-width: 1px;
+  position: relative;
+  background-color: var(--primary-red);
 }
 
 .sign-btn::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 0%;
-    width: 100%;
-    z-index: -10;
-    border-radius: 5px;
-    transition: 0.5s;
+  content: "";
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0%;
+  width: 100%;
+  z-index: -10;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 
 .sign-btn:hover::before {
-    height: 100%;
-    border: 1px dashed rgb(255, 255, 255);
+  height: 100%;
+  border: 1px dashed rgb(255, 255, 255);
 }
 
 .sign-btn:hover {
-    color: red;
-    border: 1px solid black;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  color: red;
+  border: 1px solid black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .color {
-    color: #686868da;
+  color: #686868da;
 }
 
 .card {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 20px;
-    height: 300px;
-    width: 280px;
-    transition: 0.3s;
-    border: 3px solid white;
-    cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  height: 300px;
+  width: 280px;
+  transition: 0.3s;
+  border: 3px solid white;
+  cursor: pointer;
 }
 
 .card:hover {
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transform: scale(1.05);
 }
 
 .flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .shadow {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
 
 /* Dark Card */
 
 .contain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .parent {
-    position: relative;
-    z-index: 1;
-    border-radius: 20px;
-    box-shadow: 0px 10px 100px 25px #505050;
-    height: 200px;
-    width: 200px;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  box-shadow: 0px 10px 100px 25px #505050;
+  height: 200px;
+  width: 200px;
 }
 
 .child {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    background: rgb(52, 52, 52);
-    border-radius: 20px;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background: rgb(52, 52, 52);
+  border-radius: 20px;
 }
 
 .child::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    border-radius: 20px;
-    box-shadow: 0 20px 25px -5px #000, 0 8px 10px -6px #000;
-    z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px #000, 0 8px 10px -6px #000;
+  z-index: -1;
 }
 
 /* ----------------------- */
@@ -256,60 +251,64 @@ body {
 } */
 
 .to-top {
-    position: fixed;
-    bottom: 10px;
-    right: 30px;
-    opacity: 0;
-    transition: 0.5s;
-    transform: translateY(100px);
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(100px);
 }
 
 .show-top-btn {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .animate {
-    transform: translateX(60px);
-    opacity: 0;
-    transition-property: transform;
-    transition: 0.6s;
+  transform: translateX(60px);
+  opacity: 0;
+  transition-property: transform;
+  transition: 0.6s;
 }
 
 .left {
-    transition-property: transform;
-    transform: translateX(-60px);
-    transition: 0.6s;
-    opacity: 0;
+  transition-property: transform;
+  transform: translateX(-60px);
+  transition: 0.6s;
+  opacity: 0;
 }
 
 .top-enter {
-    transition-property: transform;
-    transform: scale(0.9);
-    transition: 0.5s;
-    opacity: 0;
+  transition-property: transform;
+  transform: scale(0.9);
+  transition: 0.5s;
+  opacity: 0;
 }
 
 .fade {
-    transition-property: transform;
-    opacity: 0;
-    transition: 0.5s;
+  transition-property: transform;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .card {
-    /* transition-property: transform; */
-    transform: translateY(60px);
-    transition: 0.5s;
+  /* transition-property: transform; */
+  transform: translateY(60px);
+  transition: 0.5s;
 }
 
 .pattern-img {
-    /* z-index: -100; */
-    /* transform: translateX(350px) translateY(-300px) rotate(80deg); */
-    /* background-color: red; */
-    /* margin-left: 700px; */
+  /* z-index: -100; */
+  /* transform: translateX(350px) translateY(-300px) rotate(80deg); */
+  /* background-color: red; */
+  /* margin-left: 700px; */
 }
 
 .entrance {
-    transform: translate(0) scale(1) rotate(0);
-    opacity: 1;
+  transform: translate(0) scale(1) rotate(0);
+  opacity: 1;
+}
+
+.contact-form {
+  transition: 0.4s;
 }
