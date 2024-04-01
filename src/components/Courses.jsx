@@ -84,7 +84,7 @@ export const Courses = () => {
               8
             </span>
             <ul>
-              <li>Importing stock data into sheet</li>
+              <li>Importing stock data into the S.P.V.T</li>
             </ul>
           </div>
           <div className="flex gap-7 md:gap-10 items-center">

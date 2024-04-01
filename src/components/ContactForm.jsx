@@ -27,6 +27,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
           setLoading(false);
           console.log("SUCCESS!");
           toast("Sent Successfully!!!");
+          setIsOpen(false);
 
           setEmail("");
           setNumber("");
@@ -101,6 +102,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
           >
             <option value="1 year">1 year</option>
             <option value="2 years">2 years</option>
+            <option value="Basic">Basic</option>
           </select>
         </div>
         <button

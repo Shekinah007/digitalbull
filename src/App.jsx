@@ -8,17 +8,14 @@ import Sidebar from "./components/Sidebar";
 
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
-import { TypeAnimation } from "react-type-animation";
 import { useParallax } from "react-scroll-parallax";
 
 import uiImage from "./assets/images/illustrations/undraw_data_trends_re_2cdy.svg";
 import questionsImg from "./assets/images/illustrations/undraw_questions_re_1fy7.svg";
-import climbImg from "./assets/images/climb2.png";
 import excelImg1 from "./assets/images/6296676_excel_microsoft_office_office365_icon.png";
 import excelImg2 from "./assets/images/excel-3873854_1280.png";
 import UIgrapghImg from "./assets/images/UI visual graph.png";
 import UIImg from "./assets/images/interface.png";
-import heroBgImg from "./assets/images/grid vert.png";
 import honeyImg from "./assets/images/honey-comb.png";
 import honeyImg2 from "./assets/images/honey-comb (2).png";
 

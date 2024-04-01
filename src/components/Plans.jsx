@@ -2,6 +2,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 import { ContactUs } from "./ContactForm";
 import { useState } from "react";
+import { Plan } from "./Plan";
 
 export const Plans = ({ isIntersecting, darkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,75 +25,39 @@ export const Plans = ({ isIntersecting, darkMode }) => {
         Choose a plan that works best for you
       </p>
       <div className="flex flex-wrap items-center justify-center gap-10">
-        <div
-          onClick={() => {
-            setIsOpen(true);
-          }}
-          className={`card flex flex-col justify-start gap-5 animate`}
-        >
-          <div
-            className="bg-red-500 h-[140px] w-full flex flex-col gap-1 justify-center
-                        items-center text-white font-bold rounded-t-[20px] "
-          >
-            <h4 className="font-bold text-3xl">1</h4>
-            <div className="w-[130px] h-[2px] bg-white rounded-md"></div>
-            <p className="text-sm">Year Plan</p>
-          </div>
-          <div className="h-full text-sm flex flex-col gap-2 justify-around self-center items-start">
-            <div className="text-sm flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <IoMdCheckmarkCircleOutline color="green" size="20px" />
-                <p>S.P.V.T One-year subscription</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <IoMdCheckmarkCircleOutline color="green" size="20px" />
-                <p>User Manual</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <IoMdCheckmarkCircleOutline color="green" size="20px" />
-                <p>Q/A Session</p>
-              </div>
-            </div>
-            <button className="cursor-pointer bg-green-500 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">
-              250<span className="text-red-500 text-sm">USD</span>
-            </button>
-          </div>
-        </div>
+        <Plan
+          handleOpen={setIsOpen}
+          items={[
+            "Learn about the full capabilities of S.P.V.T",
+            "Q/A Session/Training Only",
+          ]}
+          price={"50"}
+          type={"Basic"}
+          year={""}
+        />
 
-        <div
-          onClick={() => {
-            setIsOpen(true);
-          }}
-          className="card flex flex-col justify-start gap-5 animate"
-        >
-          <div
-            className="bg-red-500 h-[140px] w-full flex flex-col gap-1 justify-center
-                        items-center text-white font-bold rounded-t-[20px] "
-          >
-            <h4 className="font-bold text-3xl">2</h4>
-            <div className="w-[130px] h-[2px] bg-white rounded-md"></div>
-            <p className="text-sm">Year Plan</p>
-          </div>
-          <div className="h-full text-sm flex flex-col gap-2 justify-around self-center items-start">
-            <div className="text-sm flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <IoMdCheckmarkCircleOutline color="green" size="20px" />
-                <p>S.P.V.T Two-year subscription</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <IoMdCheckmarkCircleOutline color="green" size="20px" />
-                <p>User Manual</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <IoMdCheckmarkCircleOutline color="green" size="20px" />
-                <p>Q/A Session</p>
-              </div>
-            </div>
-            <button className="shadow bg-green-500 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">
-              400<span className="text-red-500 text-sm ">USD</span>
-            </button>
-          </div>
-        </div>
+        <Plan
+          handleOpen={setIsOpen}
+          items={[
+            "S.P.V.T One-year subscription",
+            "User Manual",
+            "Q/A Session/Training ",
+          ]}
+          price={"350"}
+          type={"1"}
+          year={"Year Plan"}
+        />
+        <Plan
+          handleOpen={setIsOpen}
+          items={[
+            "S.P.V.T Two-year subscription",
+            "User Manual",
+            "Q/A Session/Training ",
+          ]}
+          price={"600"}
+          type={"2"}
+          year={"Year Plan"}
+        />
       </div>
 
       <ContactUs isOpen={isOpen} setIsOpen={setIsOpen} />
