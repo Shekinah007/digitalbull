@@ -16,10 +16,10 @@ export const Footer = () => {
               </a>
             </div>
           </p>
-          <p>
+          {/* <p>
             A Q/A session will be held within 2 weeks of receiving the tool to
             address questions on tool use and functionalities.
-          </p>
+          </p> */}
         </div>
         <div className="hidden md:flex self-end md:self-start mt-[5px] gap-3 items-center ">
           <span>👉</span>

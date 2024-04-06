@@ -19,7 +19,7 @@ export const Plan = ({ handleOpen, items, price, type, year }) => {
       <div className="h-full text-sm flex flex-col gap-2 justify-around self-center items-start">
         <div
           className={`text-sm flex flex-col gap-2 w-full ${
-            type == "Basic" && "w-[80%]"
+            type == "Basic" && "w-[75%]"
           } self-center`}
         >
           {items.map((item, index) => (
