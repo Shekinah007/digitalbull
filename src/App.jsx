@@ -182,7 +182,7 @@ function App() {
             <h2 className="text-3xl font-bold text-red-500">User Interface</h2>
             <div className="left flex flex-col gap-4">
               <p>
-                DigitalBull’s Stock Price Visualization Tool (S.P.V.T) boasts a
+                Digital Bull’s Stock Price Visualization Tool (S.P.V.T) boasts a
                 user-friendly interface that effortlessly bridges complexity
                 with simplicity. Navigating through intricate stock data becomes
                 a seamless experience, thanks to the intuitive design crafted on
@@ -217,22 +217,22 @@ function App() {
               visualize historical stock price movements
             </p>
           </div>
-        </div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-20 md:px-20 ">
-          <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
-            <h2 className="text-3xl font-bold text-red-500">
-              User Interface: Prediction/Threshold Tables
-            </h2>
-            <p className="animate">
-              Visualize support and resistance with prediction tables and get
-              historical perspective on breaches of support and resistance
-              thresholds.
-            </p>
-          </div>
-          {/* <img
+          <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-20  ">
+            <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
+              <h2 className="text-3xl font-bold text-red-500">
+                User Interface: Prediction/Threshold Tables
+              </h2>
+              <p className="animate">
+                Visualize support and resistance with prediction tables and get
+                historical perspective on breaches of support and resistance
+                thresholds.
+              </p>
+            </div>
+            {/* <img
             src={UIImg}
             className="w-[80vw] md:h-[200px] md:w-[400px] left"
           /> */}
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center py-10 md:py-5 md:gap-20 md:px-20 ">
@@ -244,7 +244,7 @@ function App() {
             <h2 className="text-3xl font-bold  text-green-500">User Manual</h2>
             <div className="animate flex flex-col gap-4">
               <p>
-                DIGITAL BULL’s commitment to user empowerment extends beyond
+                Digital Bull’s commitment to user empowerment extends beyond
                 software design to an exceptional user manual accompanying the
                 Stock Price Visualization Tool (S.P.V.T). Meticulously curated,
                 the manual serves as a comprehensive guide, unraveling the
