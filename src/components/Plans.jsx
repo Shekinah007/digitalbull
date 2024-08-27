@@ -28,26 +28,25 @@ export const Plans = ({ isIntersecting, darkMode }) => {
         <Plan
           handleOpen={setIsOpen}
           items={[
-            "Learn about the full capabilities of S.P.V.T",
-            "Q/A Session/Training Only",
+            "S.P.V.T. Trial version. Learn about the full capabilities of the S.P.V.T",
+            "Analyze historical data",
           ]}
-          price={"50"}
-          type={"Basic"}
+          price={"Free"}
+          type={"Trial"}
           year={""}
         />
 
         <Plan
           handleOpen={setIsOpen}
           items={[
-            "S.P.V.T One-year subscription",
-            "User Manual",
-            "Q/A Session/Training ",
+            "S.P.V.T One-year subscription + Training Materials",
+            "Analyze live data ",
           ]}
-          price={"350"}
+          price={"150"}
           type={"1"}
           year={"Year Plan"}
         />
-        <Plan
+        {/* <Plan
           handleOpen={setIsOpen}
           items={[
             "S.P.V.T Two-year subscription",
@@ -57,7 +56,7 @@ export const Plans = ({ isIntersecting, darkMode }) => {
           price={"600"}
           type={"2"}
           year={"Year Plan"}
-        />
+        /> */}
       </div>
 
       <ContactUs isOpen={isOpen} setIsOpen={setIsOpen} />

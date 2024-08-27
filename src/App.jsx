@@ -153,16 +153,7 @@ function App() {
               The S.P.V.T aims to offer traders a comprehensive visual
               representation of stock price movements, aiding them in
               identifying potential market trends and making strategic
-              decisions. Through the seamless integration of data visualization
-              techniques within Excel, Digital Bull strives to enhance user
-              experience, ensuring clarity and accessibility in interpreting
-              complex market dynamics. In a landscape where real-time
-              decision-making is crucial, Digital Bull’s S.P.V.T emerges as a
-              powerful ally for traders, bridging the gap between data and
-              actionable insights. By leveraging the capabilities of Microsoft
-              Excel, this team of analysts exemplifies how dedication and
-              innovation can converge to shape the future of stock trading
-              tools.
+              decisions.
             </p>
           </div>
         </div>
@@ -204,15 +195,6 @@ function App() {
                 src={uiImage}
                 className="h-[170px] md:hidden md:h-[300px] "
               />
-
-              <p>
-                With sleek visuals, interactive charts, and streamlined
-                controls, users can grasp intricate stock price trends at a
-                glance. DigitalBull’s commitment to a friendly user interface
-                propels the S.P.V.T to the forefront, empowering investors with
-                a powerful yet approachable tool for making well-informed
-                decisions in the dynamic world of stock trading.
-              </p>
             </div>
           </div>
           <img
@@ -222,10 +204,10 @@ function App() {
         </div>
 
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 pt-[70px] md:gap-20 md:px-20 ">
-          <img
+          {/* <img
             src={UIgrapghImg}
             className=" w-[80vw] md:h-[200px] md:w-[400px] left"
-          />
+          /> */}
           <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
             <h2 className="text-3xl font-bold text-red-500">
               User Interface: Stock Profile Graphs
@@ -236,7 +218,7 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 md:px-20 ">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-20 md:px-20 ">
           <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
             <h2 className="text-3xl font-bold text-red-500">
               User Interface: Prediction/Threshold Tables
@@ -247,10 +229,10 @@ function App() {
               thresholds.
             </p>
           </div>
-          <img
+          {/* <img
             src={UIImg}
             className="w-[80vw] md:h-[200px] md:w-[400px] left"
-          />
+          /> */}
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center py-10 md:py-5 md:gap-20 md:px-20 ">
@@ -258,7 +240,7 @@ function App() {
             src={excelImg2}
             className="h-[150px] md:h-[300px] self-end md:self-start mr-[30px] md:mr-[0] left"
           />
-          <div className="w-[600px] animate flex flex-col gap-2 max-w-[90vw]  md:min-h-[80vh] md:justify-end ">
+          <div className="w-[600px] animate flex flex-col gap-2 max-w-[90vw]  md:min-h-[60vh] md:justify-end ">
             <h2 className="text-3xl font-bold  text-green-500">User Manual</h2>
             <div className="animate flex flex-col gap-4">
               <p>
@@ -268,7 +250,7 @@ function App() {
                 the manual serves as a comprehensive guide, unraveling the
                 intricate features of the tool with clarity and precision.
               </p>
-              <p>
+              {/* <p>
                 From step-by-step setup instructions to in-depth explanations of
                 advanced functionalities, users are ushered into a realm of
                 understanding. Digital Bull’s user manual is more than a guide;
@@ -276,7 +258,7 @@ function App() {
                 As investors embark on harnessing the full potential of S.P.V.T,
                 this well-crafted manual stands as a beacon, ensuring mastery
                 and confidence in navigating the complexities of stock analysis.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -286,7 +268,7 @@ function App() {
             <h2 className="text-3xl font-semibold text-red-500">Q/A Session</h2>
             <div className="flex flex-col gap-4">
               <p className="animate">
-                <p className="animate">
+                {/* <p className="animate">
                   Digital Bull's commitment to user proficiency extends to a
                   dynamic
                 </p>
@@ -302,19 +284,26 @@ function App() {
                 <p className="animate">
                   guide, addressing user queries and unlocking the nuances of
                   the
+                </p> */}
+                <p>
+                  Digital Bull's commitment to user proficiency extends to a
+                  dynamic online Q/A session where participants gain firsthand
+                  insights into navigating the tool's features, interpreting
+                  visualizations, and optimizing its potential for informed
+                  decision-making.
                 </p>
 
                 {/* <img src={dotImg} alt="" className={`absolute md:block w-[600px] opacity-60 ${!darkMode && "invert"}  md:opacity-100  rotate-45 top-[1000px] -right-[200px] md:-right-[400px] md:top-[600px]`} /> */}
 
-                <p className="animate">
+                {/* <p className="animate">
                   Stock Price Visualization Tool (S.P.V.T).
-                </p>
+                </p> */}
               </p>
               <img
                 src={questionsImg}
                 className="h-[150px] animate md:hidden left"
               />
-              <p className="animate">
+              {/* <p className="animate">
                 Led by able instructors, participants gain firsthand insights
                 into navigating the tool's features, interpreting
                 visualizations, and optimizing its potential for informed
@@ -322,7 +311,7 @@ function App() {
                 learning experience into a collaborative journey, ensuring users
                 grasp the intricacies of the tool while fostering a supportive
                 community of investors ready to harness the power of S.P.V.T.
-              </p>
+              </p> */}
             </div>
           </div>
           <img src={questionsImg} className="h-[300px] hidden md:block left" />
@@ -330,7 +319,7 @@ function App() {
       </div>
 
       <div id="mid-point" className="flex flex-col">
-        <Courses />
+        {/* <Courses /> */}
         <Plans darkMode={darkMode} isIntersecting={isIntersecting} />
         <Footer />
       </div>

@@ -23,15 +23,21 @@ export const Plan = ({ handleOpen, items, price, type, year }) => {
           } self-center`}
         >
           {items.map((item, index) => (
-            <div className="flex items-center gap-2" key={index}>
-              <IoMdCheckmarkCircleOutline color="green" size="20px" />
-              <p>{item}</p>
+            <div className="flex  items-center gap-2 " key={index}>
+              <IoMdCheckmarkCircleOutline
+                color="green"
+                // size="20px"
+                className=" "
+              />
+              <p className="w-[200px]">{item}</p>
             </div>
           ))}
         </div>
         <button className="shadow bg-green-500 text-lg p-1 w-[150px] rounded-2xl self-center font-bold text-white">
           {price}
-          <span className="text-red-500 text-sm ">USD</span>
+          <span className="text-red-500 text-sm ">
+            {price !== "Free" && "USD"}
+          </span>
         </button>
       </div>
     </div>
