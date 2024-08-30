@@ -208,7 +208,7 @@ function App() {
             src={UIgrapghImg}
             className=" w-[80vw] md:h-[200px] md:w-[400px] left"
           /> */}
-          <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
+          <div className="w-[600px] animate flex flex-col gap-1  max-w-[90vw]">
             <h2 className="text-3xl font-bold text-red-500">
               User Interface: Stock Profile Graphs
             </h2>
@@ -219,8 +219,8 @@ function App() {
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-20  ">
             <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
-              <h2 className="text-3xl font-bold text-red-500">
-                User Interface: Prediction/Threshold Tables
+              <h2 className="text-3xl font-bold text-red-500 md:mb-8">
+                User Interface: Threshold Tables
               </h2>
               <p className="animate">
                 Visualize support and resistance with prediction tables and get

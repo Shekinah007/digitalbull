@@ -33,7 +33,7 @@ export const Plans = ({ isIntersecting, darkMode }) => {
           ]}
           price={"Free"}
           type={"Trial"}
-          year={""}
+          year={"Plan"}
         />
 
         <Plan
@@ -43,8 +43,8 @@ export const Plans = ({ isIntersecting, darkMode }) => {
             "Analyze live data ",
           ]}
           price={"150"}
-          type={"1"}
-          year={"Year Plan"}
+          type={"1 year"}
+          year={"Plan"}
         />
         {/* <Plan
           handleOpen={setIsOpen}
