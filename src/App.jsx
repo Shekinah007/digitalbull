@@ -214,7 +214,7 @@ function App() {
             </h2>
             <p className="animate">
               Easily generate stock profile graphs from Raw stock data to
-              visualize historical stock price movements
+              visualize historical stock price movements.
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-20  ">
