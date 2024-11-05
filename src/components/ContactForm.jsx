@@ -1,9 +1,12 @@
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Select from "react-select";
+import countryList from "react-select-country-list";
 
 import { ToastContainer, toast } from "react-toastify";
 
 export const ContactUs = ({ isOpen, setIsOpen }) => {
+  const options = useMemo(() => countryList().getData(), []);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
@@ -16,6 +19,11 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (!name || !email || !number || !country) {
+      toast("Please fill out all fields");
+      return;
+    }
+
     console.log("Triggered!!");
 
     setLoading(true);
@@ -27,7 +35,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
         () => {
           setLoading(false);
           console.log("SUCCESS!");
-          toast("Sent Successfully!!!");
+          toast("Submitted!");
           setIsOpen(false);
 
           setEmail("");
@@ -62,10 +70,11 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
           X
         </button>
         <div className="flex flex-col gap-1">
-          <label>Full Name</label>
+          {/* <label>Full Name</label> */}
           <input
             type="text"
             name="user_name"
+            placeholder="Full Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="text-black outline-none p-2 rounded-lg"
@@ -73,10 +82,21 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
           />
         </div>
         <div className="flex flex-col gap-1">
-          <label>Email</label>
+          {/* <label htmlFor="plan">Country of Residence</label> */}
+          <Select
+            options={options}
+            value={country}
+            name={country}
+            placeholder="Country of Residence"
+            onChange={(value) => setCountry(value)}
+          />
+        </div>
+        <div className="flex flex-col gap-1">
+          {/* <label>Email</label> */}
           <input
             type="email"
             name="user_email"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="text-black outline-none p-2 rounded-lg"
@@ -84,10 +104,11 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
           />
         </div>
         <div className="flex flex-col gap-1">
-          <label>Phone</label>
+          {/* <label>Phone</label> */}
           <input
             type="tel"
             name="phone_number"
+            placeholder="Phone"
             value={number}
             onChange={(e) => setNumber(e.target.value)}
             className="text-black outline-none p-2 rounded-lg"
@@ -102,11 +123,11 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
             name="plan"
             className="text-black outline-none p-2 rounded-lg"
           >
-            <option value="1 year">1 year</option>
-            <option value="2 years">2 years</option>
-            <option value="Basic">Basic</option>
+            <option value="1 year">Trial</option>
+            <option value="2 years">1 Year</option>
           </select>
         </div>
+
         <button
           value={"Send"}
           className=" rounded-md text-red-600 py-1 w-[200px] self-center text-lg font-semibold shadow shadow-gray-600"
