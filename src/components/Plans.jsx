@@ -42,7 +42,7 @@ export const Plans = ({ isIntersecting, darkMode }) => {
             "S.P.V.T One-year subscription + Training Materials",
             "Analyze live data ",
           ]}
-          price={"150"}
+          price={"300"}
           type={"1 year"}
           year={"Plan"}
         />
