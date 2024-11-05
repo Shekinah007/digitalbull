@@ -7,6 +7,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
+  const [country, setCountry] = useState("");
 
   const [loading, setLoading] = useState(false);
 
@@ -32,6 +33,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
           setEmail("");
           setNumber("");
           setName("");
+          setCountry("");
         },
         (error) => {
           setLoading(false);
@@ -60,13 +62,13 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
           X
         </button>
         <div className="flex flex-col gap-1">
-          <label>Name</label>
+          <label>Full Name</label>
           <input
             type="text"
             name="user_name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="text-black outline-none p-2 rounded-sm"
+            className="text-black outline-none p-2 rounded-lg"
             // required
           />
         </div>
@@ -77,7 +79,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
             name="user_email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="text-black outline-none p-2 rounded-sm"
+            className="text-black outline-none p-2 rounded-lg"
             // required
           />
         </div>
@@ -88,7 +90,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
             name="phone_number"
             value={number}
             onChange={(e) => setNumber(e.target.value)}
-            className="text-black outline-none p-2 rounded-sm"
+            className="text-black outline-none p-2 rounded-lg"
             // required
           />
         </div>
@@ -98,7 +100,7 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
             id="plan"
             type="text"
             name="plan"
-            className="text-black outline-none p-2 rounded-sm"
+            className="text-black outline-none p-2 rounded-lg"
           >
             <option value="1 year">1 year</option>
             <option value="2 years">2 years</option>

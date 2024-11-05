@@ -40,10 +40,10 @@ export const Plans = ({ isIntersecting, darkMode }) => {
           handleOpen={setIsOpen}
           items={[
             "S.P.V.T One-year subscription + Training Materials",
-            "Analyze live data ",
+            "Analyze live data (NYSE & TSX)",
           ]}
           price={"300"}
-          type={"1 year"}
+          type={"1 year (Live)"}
           year={"Plan"}
         />
         {/* <Plan

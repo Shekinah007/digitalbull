@@ -27,12 +27,15 @@ import {
   scrollProgress,
 } from "./helperFunctions/functions";
 import Hero from "./components/Hero";
+import { ContactUs } from "./components/ContactForm";
 
 function App() {
   const [sideBar, handleSideBar] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const [isIntersecting, setIsIntersecting] = useState(false);
+
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     // Progress bar function
@@ -154,6 +157,13 @@ function App() {
               representation of stock price movements, aiding them in
               identifying potential market trends and making strategic
               decisions.
+            </p>
+            <p className="animate z-10">
+              Through careful application of trading strategies using the
+              S.P.V.T, entry and exit positions can be chosen to attain a 5%
+              gain per trade while minimizing risk. The S.P.V.T can be used as a
+              stand-alone tool or in conjunction with other stock price analysis
+              tools and techniques.
             </p>
           </div>
         </div>
@@ -322,6 +332,9 @@ function App() {
         {/* <Courses /> */}
         <Plans darkMode={darkMode} isIntersecting={isIntersecting} />
         <Footer />
+        <p className="self-center  border-t border-white w-full text-center pt-2 pb-2">
+          Digital bull is owned by MOKH DATA INC
+        </p>
       </div>
     </div>
   );
