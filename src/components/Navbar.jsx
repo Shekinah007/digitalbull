@@ -43,9 +43,9 @@ export const Navbar = ({
           <a href="#learning-goals" className="nav-link font-semibold">
             Learning Goals
           </a>
-          <a href="#course-outline" className="nav-link font-semibold ">
+          {/* <a href="#course-outline" className="nav-link font-semibold ">
             Course Outline
-          </a>
+          </a> */}
           <a href="#plans" className="nav-link font-semibold ">
             Plans
           </a>

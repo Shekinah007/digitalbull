@@ -65,10 +65,11 @@ function Hero({ darkMode, parallax }) {
           make informed trading decisions.
         </p>
         <a
-          href="#plans"
+          href="http://www.udemy.com/course/stock-price-visualization-with-ms-excel-learn-to-trade"
+          target="blank"
           className="text-white sign-btn self-start  font-semibold p-2 rounded-md animate"
         >
-          Sign Up For a Course
+          Sign Up For A Course
         </a>
       </div>
       <img
