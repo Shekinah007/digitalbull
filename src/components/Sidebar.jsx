@@ -31,6 +31,9 @@ export default function Sidebar({
       <a href="#plans" onClick={() => handleSideBar(false)}>
         Plans
       </a>
+      <a href="#learning-goals" className="nav-link font-semibold">
+        Refund Policy
+      </a>
       <a
         href="mailto:info@digitalbullmarket.com"
         className="rounded-md border-2 border-red-300 p-2 contact"

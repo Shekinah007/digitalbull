@@ -123,8 +123,9 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
             name="plan"
             className="text-black outline-none p-2 rounded-lg"
           >
-            <option value="1 year">Trial</option>
-            <option value="2 years">1 Year</option>
+            <option value="Trial">Trial</option>
+            {/* <option value="6 Months">6 Months</option>
+            <option value="1 year">1 Year</option> */}
           </select>
         </div>
 

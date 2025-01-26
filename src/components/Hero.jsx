@@ -39,7 +39,7 @@ function Hero({ darkMode, parallax }) {
               1000,
               "TRADE SKILLFULLY",
               1000,
-              "DIGITAL BULL",
+              "Digitbull",
               (el) => {
                 el.classList.add("text-red-500");
                 el.classList.add("scale-125");
@@ -60,16 +60,14 @@ function Hero({ darkMode, parallax }) {
         </h1>
         <p className="left">
           {" "}
-          Digital bull provides unique training on stock price data analysis and
-          gives you the tools to explore the stock market, gain insights and
-          make informed trading decisions.
+          Reveal the mechanical cycle of stock price movements using our stock price data analysis tools and techniques. Digitbull provides unique training on stock price data analysis and gives you the tools to explore the stock market, gain insights and make informed trading decisions.
         </p>
         <a
-          href="http://www.udemy.com/course/stock-price-visualization-with-ms-excel-learn-to-trade"
+          href="https://www.youtube.com/@Digitbull"
           target="blank"
           className="text-white sign-btn self-start  font-semibold p-2 rounded-md animate"
         >
-          Sign Up For A Course
+          Visit our Channel
         </a>
       </div>
       <img

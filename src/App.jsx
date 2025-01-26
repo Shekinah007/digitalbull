@@ -132,38 +132,17 @@ function App() {
           <div className="relative w-[600px] flex flex-col gap-2 md:text-base max-w-[90vw] md:max-w-[80vw] ">
             <h2 className="z-10 font-bold text-3xl md:text-3xl">About</h2>
             <p className="animate z-10">
-              Digital Bull, a dedicated team of analysts, is diligently
-              harnessing the power of Microsoft Excel to craft a groundbreaking
-              software tool named Stock Price Visualization Tool (S.P.V.T). This
-              innovative tool is poised to revolutionize the world of stock
-              trading by providing insightful visualizations of stock price
-              trends, empowering investors to make informed decisions.
+              Digitbull, a dedicated team of analysts, has diligently harnessed the power of Microsoft Excel to craft a groundbreaking software tool named Stock Price Visualization Tool (S.P.V.T). This innovative tool reveals the mechanical cycle of stock price movements and provides insightful visualizations of stock price trends, empowering investors to run potential scenarios and make informed decisions.
             </p>
             <img
               src={excelImg1}
               className=" h-[100px] w-[100px] self-center md:hidden left z-30"
             />
             <p className="animate z-10 ">
-              The team’s commitment to excellence is evident in their meticulous
-              use of Microsoft Excel, a versatile spreadsheet software, to
-              develop the intricate algorithms and formulas that underpin the
-              S.P.V.T. Excel’s robust computational capabilities enable Digital
-              Bull to process vast amounts of historical stock data swiftly,
-              extracting meaningful patterns and trends.
-            </p>
-
-            <p className="animate z-10">
-              The S.P.V.T aims to offer traders a comprehensive visual
-              representation of stock price movements, aiding them in
-              identifying potential market trends and making strategic
-              decisions.
+            The S.P.V.T. is built on the Microsoft Excel platform, a versatile spreadsheet software used to develop the intricate algorithms and formulas that underpin the S.P.V.T. Excel’s robust computational capabilities enables the user to process vast amounts of historical stock data swiftly, extracting meaningful patterns and trends.
             </p>
             <p className="animate z-10">
-              Through careful application of trading strategies using the
-              S.P.V.T, entry and exit positions can be chosen to attain a 5%
-              gain per trade while minimizing risk. The S.P.V.T can be used as a
-              stand-alone tool or in conjunction with other stock price analysis
-              tools and techniques.
+            Through careful application of trading strategies using the S.P.V.T, entry and exit positions can be chosen to attain a 5% to 10% gain per trade while minimizing risk. 
             </p>
           </div>
         </div>
@@ -192,7 +171,7 @@ function App() {
             <h2 className="text-3xl font-bold text-red-500">User Interface</h2>
             <div className="left flex flex-col gap-4">
               <p>
-                Digital Bull’s Stock Price Visualization Tool (S.P.V.T) boasts a
+                Digitbull’s Stock Price Visualization Tool (S.P.V.T) boasts a
                 user-friendly interface that effortlessly bridges complexity
                 with simplicity. Navigating through intricate stock data becomes
                 a seamless experience, thanks to the intuitive design crafted on
@@ -218,7 +197,7 @@ function App() {
             src={UIgrapghImg}
             className=" w-[80vw] md:h-[200px] md:w-[400px] left"
           /> */}
-          <div className="w-[600px] animate flex flex-col gap-1  max-w-[90vw]">
+          {/* <div className="w-[600px] animate flex flex-col gap-1  max-w-[90vw]">
             <h2 className="text-3xl font-bold text-red-500">
               User Interface: Stock Profile Graphs
             </h2>
@@ -226,7 +205,7 @@ function App() {
               Easily generate stock profile graphs from Raw stock data to
               visualize historical stock price movements.
             </p>
-          </div>
+          </div> */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-20  ">
             <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
               <h2 className="text-3xl font-bold text-red-500 md:mb-8">
@@ -254,7 +233,7 @@ function App() {
             <h2 className="text-3xl font-bold  text-green-500">User Manual</h2>
             <div className="animate flex flex-col gap-4">
               <p>
-                Digital Bull’s commitment to user empowerment extends beyond
+                Digitbull’s commitment to user empowerment extends beyond
                 software design to an exceptional user manual accompanying the
                 Stock Price Visualization Tool (S.P.V.T). Meticulously curated,
                 the manual serves as a comprehensive guide, unraveling the
@@ -263,7 +242,7 @@ function App() {
               {/* <p>
                 From step-by-step setup instructions to in-depth explanations of
                 advanced functionalities, users are ushered into a realm of
-                understanding. Digital Bull’s user manual is more than a guide;
+                understanding. Digitbull’s user manual is more than a guide;
                 it’s a strategic companion, fostering a seamless learning curve.
                 As investors embark on harnessing the full potential of S.P.V.T,
                 this well-crafted manual stands as a beacon, ensuring mastery
@@ -275,11 +254,11 @@ function App() {
 
         <div className="flex relative overflow-x-hidden flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
           <div className="w-[600px] animate flex flex-col gap-2 py-10 md:py-5  max-w-[90vw]">
-            <h2 className="text-3xl font-semibold text-red-500">Q/A Session</h2>
+            <h2 className="text-3xl font-semibold text-red-500">Why use S.P.V.T</h2>
             <div className="flex flex-col gap-4">
               <p className="animate">
                 {/* <p className="animate">
-                  Digital Bull's commitment to user proficiency extends to a
+                  Digitbull's commitment to user proficiency extends to a
                   dynamic
                 </p>
 
@@ -295,13 +274,14 @@ function App() {
                   guide, addressing user queries and unlocking the nuances of
                   the
                 </p> */}
-                <p>
-                  Digital Bull's commitment to user proficiency extends to a
-                  dynamic online Q/A session where participants gain firsthand
-                  insights into navigating the tool's features, interpreting
-                  visualizations, and optimizing its potential for informed
-                  decision-making.
-                </p>
+                <ul>
+                  <li style={{marginBottom: 10}}>Instantly generate stock profile graphs and other visuals which describe the mechanical behaviour of stock price movements.</li>
+                  <li style={{marginBottom: 10}}>Use these visuals to make well timed decisions for entry and exit on trades through stock profile visualization.</li>
+                  <li style={{marginBottom: 10}}>Run scenarios to visualize the positions of potential entry and exit prices on the stock profile visuals.</li>
+                  <li style={{marginBottom: 10}}>Analyze up to 5years worth of historical data in an instant. Information displayed in one clear, concise visual profile.</li>
+                  <li style={{marginBottom: 10}}>S.P.V.T. User manual is available to aid users in understanding the full capabilities and functionalities of the S.P.V.T.</li>
+                  <li style={{marginBottom: 10}}>Demo version is free. Try it out.</li>
+                </ul>
 
                 {/* <img src={dotImg} alt="" className={`absolute md:block w-[600px] opacity-60 ${!darkMode && "invert"}  md:opacity-100  rotate-45 top-[1000px] -right-[200px] md:-right-[400px] md:top-[600px]`} /> */}
 
@@ -333,7 +313,7 @@ function App() {
         <Plans darkMode={darkMode} isIntersecting={isIntersecting} />
         <Footer />
         <p className="self-center  border-t border-white w-full text-center pt-2 pb-2">
-          Digital bull is owned by MOKH DATA INC
+          Digitbull is propriety property of MOKH DATA INC
         </p>
       </div>
     </div>

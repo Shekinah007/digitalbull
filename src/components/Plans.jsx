@@ -32,33 +32,40 @@ export const Plans = ({ isIntersecting, darkMode }) => {
             "Analyze historical data",
           ]}
           price={"Free"}
-          type={"Trial"}
+          type={"Demo"}
           year={"Plan"}
         />
 
-        <Plan
-          handleOpen={setIsOpen}
-          items={[
-            "S.P.V.T One-year subscription + Training Materials",
-            "Analyze live data (NYSE & TSX)",
-          ]}
-          price={"265"}
-          type={"1 year (Live)"}
-          year={"Plan"}
-        />
-        {/* <Plan
-          handleOpen={setIsOpen}
-          items={[
-            "S.P.V.T Two-year subscription",
-            "User Manual",
-            "Q/A Session/Training ",
-          ]}
-          price={"600"}
-          type={"2"}
-          year={"Year Plan"}
-        /> */}
+        <a href="https://buy.stripe.com/bIYg1hbh42tago09AG" target="_blank">
+          <Plan
+            handleOpen={() => {}}
+            items={[
+              "S.P.V.T. 6-month plan. Learn about the full capabilities of the S.P.V.T",
+              "Analyze live data (NYSE & TSX)",
+            ]}
+            price={"12"}
+            type={"6 Months"}
+            year={"Plan"}
+          />
+        </a>
+
+        <a href="https://buy.stripe.com/aEU3evbh43xe9ZCdQX" target="_blank">
+          <Plan
+            handleOpen={() => {}}
+            items={[
+              "S.P.V.T One-year subscription + Training Materials",
+              "Analyze live data (NYSE & TSX)",
+            ]}
+            price={"12"}
+            type={"1 year (Live)"}
+            year={"Plan"}
+          />
+        </a>
       </div>
 
+      <div id="refund" className="text-black">
+        <p>It takes five business days to receive the S.P.V.T after payment. Customers may request a refund within this time period.</p>
+      </div>
       <ContactUs isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
     // </ParallaxBanner >

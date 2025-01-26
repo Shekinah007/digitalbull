@@ -32,7 +32,7 @@ export const Navbar = ({
             href="#top"
             className="nav-head font-bold text-xl md:text-xl text-red-500"
           >
-            DIGITAL BULL
+            DigitBull
           </a>
           {/* <div className="underline"></div> */}
         </div>
@@ -48,6 +48,9 @@ export const Navbar = ({
           </a> */}
           <a href="#plans" className="nav-link font-semibold ">
             Plans
+          </a>
+          <a href="#refund" className="nav-link font-semibold">
+            Refund Policy
           </a>
         </div>
       </div>
