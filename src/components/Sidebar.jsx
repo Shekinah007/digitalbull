@@ -35,7 +35,7 @@ export default function Sidebar({
         Refund Policy
       </a>
       <a
-        href="mailto:info@digitalbullmarket.com"
+        href="mailto:info@digitbull.com"
         className="rounded-md border-2 border-red-300 p-2 contact"
       >
         Contact Us

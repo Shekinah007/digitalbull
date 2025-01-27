@@ -9,7 +9,7 @@ export const Footer = () => {
             <div className="self-center md:hidden mt-[5px] flex flex-col gap-3 items-center">
               <span>👇</span>
               <a
-                href="mailto:digitaldrbull@gmail.com"
+                href="mailto:info@digitbull.com"
                 className="p-2 rounded-md bg-red-500 text-white"
               >
                 Send us an email
@@ -24,7 +24,7 @@ export const Footer = () => {
         <div className="hidden md:flex self-end md:self-start mt-[5px] gap-3 items-center ">
           <span>👉</span>
           <a
-            href="mailto:info@digitalbullmarket.com"
+            href="mailto:info@digitbull.com"
             className="p-2 rounded-md text-white send-email"
           >
             Send us an email
@@ -33,7 +33,7 @@ export const Footer = () => {
       </div>
       <div className="flex flex-col items-center">
         <h2 className="text-3xl text-red-500 font-bold">DigitBull</h2>
-        <p className="text-xs text-gray-500">info@digitalbullmarket.com</p>
+        <p className="text-xs text-gray-500">info@digitbull.com</p>
       </div>
     </footer>
   );

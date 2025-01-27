@@ -206,7 +206,7 @@ function App() {
               visualize historical stock price movements.
             </p>
           </div> */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-20  ">
+          <div className="flex hidden flex-col md:flex-row items-center justify-center gap-3 md:gap-20  ">
             <div className="w-[600px] animate flex flex-col gap-2  max-w-[90vw]">
               <h2 className="text-3xl font-bold text-red-500 md:mb-8">
                 User Interface: Threshold Tables
@@ -254,7 +254,7 @@ function App() {
 
         <div className="flex relative overflow-x-hidden flex-col md:flex-row items-center justify-center md:gap-20 md:px-20 ">
           <div className="w-[600px] animate flex flex-col gap-2 py-10 md:py-5  max-w-[90vw]">
-            <h2 className="text-3xl font-semibold text-red-500">Why use S.P.V.T</h2>
+            <h2 className="text-3xl font-semibold text-red-500">Why use the S.P.V.T</h2>
             <div className="flex flex-col gap-4">
               <p className="animate">
                 {/* <p className="animate">
@@ -313,7 +313,7 @@ function App() {
         <Plans darkMode={darkMode} isIntersecting={isIntersecting} />
         <Footer />
         <p className="self-center  border-t border-white w-full text-center pt-2 pb-2">
-          Digitbull is propriety property of MOKH DATA INC
+          The S.P.V.T is propriety property of MOKH DATA INC
         </p>
       </div>
     </div>
