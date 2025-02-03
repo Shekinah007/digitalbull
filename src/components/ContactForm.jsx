@@ -24,8 +24,6 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
       return;
     }
 
-    console.log("Triggered!!");
-
     setLoading(true);
     emailjs
       .sendForm("service_noivkl2", "digitalbull_template", form.current, {
@@ -34,7 +32,6 @@ export const ContactUs = ({ isOpen, setIsOpen }) => {
       .then(
         () => {
           setLoading(false);
-          console.log("SUCCESS!");
           toast("Submitted!");
           setIsOpen(false);
 

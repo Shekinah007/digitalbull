@@ -313,7 +313,7 @@ function App() {
         <Plans darkMode={darkMode} isIntersecting={isIntersecting} />
         <Footer />
         <p className="self-center  border-t border-white w-full text-center pt-2 pb-2">
-          The S.P.V.T is propriety property of MOKH DATA INC
+          The S.P.V.T is proprietary property of MOKH DATA INC
         </p>
       </div>
     </div>
