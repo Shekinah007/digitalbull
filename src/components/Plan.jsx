@@ -39,7 +39,7 @@ export const Plan = ({ handleOpen, items, price, type, year }) => {
           </span>
         </button>
 
-        <p className="text-red-500 my-5">{price !== "Free" && "25% discounted from $16/Month"}</p>
+        <p className="text-red-500 mb-1">{price !== "Free" && "25% discounted from $16/Month"}</p>
       </div>
     </div>
   );
