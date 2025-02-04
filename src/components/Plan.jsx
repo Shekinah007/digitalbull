@@ -9,12 +9,11 @@ export const Plan = ({ handleOpen, items, price, type, year }) => {
       className="card flex flex-col justify-start gap-5 animate"
     >
       <div
-        className="bg-red-500 h-[140px] w-full flex flex-col gap-1 justify-center
-                        items-center text-white font-bold rounded-t-[20px] "
+        className="bg-red-500 h-[140px] w-full flex flex-col gap-1 justify-center pt-1 items-center text-white font-bold rounded-t-[20px] "
       >
         <h4 className="font-bold text-3xl">{type}</h4>
         <div className="w-[130px] h-[2px] bg-white rounded-md"></div>
-        <p className="text-sm h-[10px]">{year}</p>
+        <p className="text-sm h-[10px] mb-4">{year}</p>
       </div>
       <div className="h-full text-sm flex flex-col gap-2 justify-around self-center items-start">
         <div
