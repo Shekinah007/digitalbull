@@ -40,7 +40,7 @@ export const Plans = ({ isIntersecting, darkMode }) => {
           <Plan
             handleOpen={() => {}}
             items={[
-              "S.P.V.T. six months subscription + Training Materials",
+              "S.P.V.T. Six months subscription + Training materials",
               "Analyze live data (NYSE & TSX)",
             ]}
             price={"12"}
@@ -53,7 +53,7 @@ export const Plans = ({ isIntersecting, darkMode }) => {
           <Plan
             handleOpen={() => {}}
             items={[
-              "S.P.V.T One-year subscription + Training Materials",
+              "S.P.V.T One-year subscription + Training materials",
               "Analyze live data (NYSE & TSX)",
             ]}
             price={"12"}
